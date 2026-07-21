@@ -1,0 +1,181 @@
+---
+export interface Props {
+  title: string;
+  currentPage?: 'inicio' | 'nosotros' | 'contacto' | 'servicios';
+}
+
+const { title, currentPage = 'inicio' } = Astro.props;
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body style="background:#0A0A0A; color:#F0F0F0;">
+
+  <!-- HEADER -->
+  <header id="site-header" class="sticky top-0 z-50" style="background:#0A0A0A; border-bottom: 2px solid transparent;">
+    <nav class="flex justify-between items-center w-full px-gutter max-w-[1280px] mx-auto h-20">
+      <!-- Logo -->
+      <a href="/" style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; text-transform:uppercase; letter-spacing:-0.01em; color:#AAFF00; text-decoration:none;">
+        PLANTILLA 2.
+      </a>
+
+      <!-- Nav links (desktop) -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" style={`color:${currentPage==='inicio' ? '#AAFF00' : '#888'}`}>Inicio</a>
+        <a href="/nosotros" style={`color:${currentPage==='nosotros' ? '#AAFF00' : '#888'}`}>Nosotros</a>
+        <a href="/#servicios" style={`color:${currentPage==='servicios' ? '#AAFF00' : '#888'}`}>Servicios</a>
+        <a href="/contacto" style={`color:${currentPage==='contacto' ? '#AAFF00' : '#888'}`}>Contacto</a>
+      </div>
+
+      <!-- CTA + mobile menu btn -->
+      <div class="flex items-center gap-4">
+        <a href="/contacto" class="brut-btn hidden md:inline-flex">
+          Contáctanos
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden" style="background:none; border:2px solid #3D3D3D; padding:8px; cursor:pointer;">
+          <span class="material-symbols-outlined" style="color:#F0F0F0; font-size:20px;">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" style="display:none; background:#111111; border-top:2px solid #3D3D3D;">
+      <div style="padding:24px; display:flex; flex-direction:column; gap:16px;">
+        <a href="/" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#888; text-decoration:none;">// Inicio</a>
+        <a href="/nosotros" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#888; text-decoration:none;">// Nosotros</a>
+        <a href="/#servicios" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#888; text-decoration:none;">// Servicios</a>
+        <a href="/contacto" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#AAFF00; text-decoration:none;">// Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <slot />
+
+  <!-- FOOTER -->
+  <footer style="background:#0A0A0A; border-top:4px solid #AAFF00; padding:80px 24px 40px;">
+    <div style="max-width:1280px; margin:0 auto;">
+      <div style="display:grid; grid-template-columns:1fr; gap:48px; margin-bottom:64px;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:48px;">
+
+          <!-- Brand col -->
+          <div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; text-transform:uppercase; color:#AAFF00; margin-bottom:16px;">PLANTILLA 2.</div>
+            <p style="font-family:'Barlow',sans-serif; font-size:15px; color:#555; line-height:1.6; margin-bottom:24px;">
+              Soluciones digitales de alto impacto para marcas que quieren destacar.
+            </p>
+            <div style="display:flex; gap:12px;">
+              <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border:2px solid #3D3D3D; color:#888; transition:border-color 150ms, color 150ms; text-decoration:none;" onmouseover="this.style.borderColor='#AAFF00'; this.style.color='#AAFF00'" onmouseout="this.style.borderColor='#3D3D3D'; this.style.color='#888'">
+                <span class="material-symbols-outlined" style="font-size:18px;">share</span>
+              </a>
+              <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border:2px solid #3D3D3D; color:#888; transition:border-color 150ms, color 150ms; text-decoration:none;" onmouseover="this.style.borderColor='#AAFF00'; this.style.color='#AAFF00'" onmouseout="this.style.borderColor='#3D3D3D'; this.style.color='#888'">
+                <span class="material-symbols-outlined" style="font-size:18px;">public</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact col -->
+          <div>
+            <div class="brut-section-label" style="margin-bottom:16px;">// Contacto</div>
+            <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+              <li style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#888;">
+                <span class="material-symbols-outlined" style="font-size:16px; color:#AAFF00;">call</span>
+                +34 639 494 000
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#888;">
+                <span class="material-symbols-outlined" style="font-size:16px; color:#AAFF00;">mail</span>
+                contacto@plantilla2.com
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#888;">
+                <span class="material-symbols-outlined" style="font-size:16px; color:#AAFF00;">location_on</span>
+                Madrid, España
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pages col -->
+          <div>
+            <div class="brut-section-label" style="margin-bottom:16px;">// Páginas</div>
+            <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">
+              <li><a href="/" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Inicio</a></li>
+              <li><a href="/nosotros" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Nosotros</a></li>
+              <li><a href="/#servicios" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Servicios</a></li>
+              <li><a href="/contacto" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Links col -->
+          <div>
+            <div class="brut-section-label" style="margin-bottom:16px;">// Links</div>
+            <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">
+              <li><a href="#" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Blog</a></li>
+              <li><a href="#" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">FAQ</a></li>
+              <li><a href="#" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Privacidad</a></li>
+              <li><a href="#" style="font-family:'Barlow',sans-serif; font-size:15px; color:#888; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Términos</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div style="padding-top:24px; border-top:2px solid #2A2A2A; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px;">
+        <p style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555; margin:0;">
+          &copy; 2026 PLANTILLA 2 &mdash; TODOS LOS DERECHOS RESERVADOS
+        </p>
+        <div style="display:flex; gap:24px;">
+          <a href="#" style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#555'">Términos</a>
+          <a href="#" style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555; text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#555'">Soporte</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    /* Header scroll effect */
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header?.classList.add('scrolled');
+        header && (header.style.borderBottomColor = '#AAFF00');
+      } else {
+        header?.classList.remove('scrolled');
+        header && (header.style.borderBottomColor = 'transparent');
+      }
+    }, { passive: true });
+
+    /* Mobile menu toggle */
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn?.addEventListener('click', () => {
+      if (mobileMenu) {
+        mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
+      }
+    });
+
+    /* IntersectionObserver for .brut-reveal */
+    const reveals = document.querySelectorAll('.brut-reveal');
+    if (reveals.length) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      reveals.forEach(el => obs.observe(el));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contacto | Plantilla 2" currentPage="contacto">
+
+  <!-- HERO -->
+  <section style="background:#0A0A0A; padding:100px 24px 80px; border-bottom:2px solid #3D3D3D;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; gap:48px; align-items:center;" class="contact-hero-grid">
+      <style>.contact-hero-grid{grid-template-columns:1fr!important} @media(min-width:768px){.contact-hero-grid{grid-template-columns:1fr 1fr!important}}</style>
+
+      <div class="brut-reveal">
+        <span class="brut-section-label" style="margin-bottom:20px;">// Contacto</span>
+        <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(44px,6vw,80px); font-weight:900; text-transform:uppercase; line-height:0.95; color:#F0F0F0; margin-bottom:24px;">
+          INICIA TU<br/><span style="color:#AAFF00;">PROYECTO</span><br/>CON NOSOTROS
+        </h1>
+        <p style="font-family:'Barlow',sans-serif; font-size:17px; color:#888; line-height:1.65; max-width:480px;">
+          Escríbenos hoy mismo y descubre cómo nuestras estrategias digitales pueden escalar tus ventas al siguiente nivel.
+        </p>
+      </div>
+
+      <div class="brut-reveal brut-reveal-delay-2" style="position:relative;">
+        <div style="position:absolute; top:-8px; right:-8px; left:8px; bottom:8px; border:2px solid #AAFF00;"></div>
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHuN7GK8OrnqtHB9Hfls1crva_jJrTCIWMzfYcDDp5KmQAJchQmrrMF-g8KVrK3LiRhxz3SgkIWinZ-tdbufDoEhZYK1DBRgXu52RTdeYkZQ7Yuu4DamM_SwYKjW_fDNVstAq9n7vo570eV1o94j6_ejxMBeHbT03qgJ0iw9YaM_zN1fd73RO752OtB7DSvEj4r6LKPeYHp0hsznfi4gPGg4AH59rAIl0p-YQdOQOctj7MeeUa0lIw-DhqAFxc71-oDs1rjxMjtjb"
+          alt="Contacto"
+          style="width:100%; max-width:500px; border:2px solid #3D3D3D; display:block; position:relative; z-index:1;"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORM + INFO -->
+  <section style="background:#111111; padding:80px 24px; border-bottom:2px solid #2A2A2A;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; gap:64px;" class="contact-form-grid">
+      <style>.contact-form-grid{grid-template-columns:1fr!important} @media(min-width:768px){.contact-form-grid{grid-template-columns:1fr 1fr!important}}</style>
+
+      <!-- Info -->
+      <div class="brut-reveal">
+        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(28px,3vw,40px); font-weight:900; text-transform:uppercase; color:#F0F0F0; margin-bottom:8px;">
+          Escríbenos un mensaje
+        </h2>
+        <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#888; line-height:1.65; margin-bottom:40px;">
+          Un especialista se pondrá en contacto contigo en menos de 24 horas.
+        </p>
+
+        <!-- Contact items -->
+        <div style="display:flex; flex-direction:column; gap:24px; margin-bottom:40px;">
+          <div style="display:flex; align-items:center; gap:16px; padding:20px; border:2px solid #3D3D3D; background:#0A0A0A;">
+            <span class="material-symbols-outlined" style="font-size:24px; color:#AAFF00;" style="font-variation-settings:'FILL' 1;">mail</span>
+            <div>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:4px;">Email</div>
+              <div style="font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:700; text-transform:uppercase; color:#F0F0F0;">hola@tuagencia.com</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:16px; padding:20px; border:2px solid #3D3D3D; background:#0A0A0A;">
+            <span class="material-symbols-outlined" style="font-size:24px; color:#AAFF00;" style="font-variation-settings:'FILL' 1;">call</span>
+            <div>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:4px;">Teléfono</div>
+              <div style="font-family:'Barlow Condensed',sans-serif; font-size:22px; font-weight:700; text-transform:uppercase; color:#F0F0F0;">+52 (777) 123 4567</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:16px;">// Redes Sociales</div>
+          <div style="display:flex; gap:12px;">
+            {['social_leaderboard','public','share'].map(icon => (
+              <a href="#" style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border:2px solid #3D3D3D; color:#888; text-decoration:none; transition:border-color 150ms, color 150ms, box-shadow 150ms;"
+                onmouseover="this.style.borderColor='#AAFF00'; this.style.color='#AAFF00'; this.style.boxShadow='3px 3px 0 #AAFF00'"
+                onmouseout="this.style.borderColor='#3D3D3D'; this.style.color='#888'; this.style.boxShadow='none'">
+                <span class="material-symbols-outlined" style="font-size:18px;">{icon}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="brut-reveal brut-reveal-delay-2" style="background:#0A0A0A; border:2px solid #3D3D3D; box-shadow:4px 4px 0 #3D3D3D; padding:48px;">
+        <form style="display:flex; flex-direction:column; gap:24px;">
+
+          <div style="display:grid; gap:24px;" class="form-row">
+            <style>.form-row{grid-template-columns:1fr!important} @media(min-width:600px){.form-row{grid-template-columns:1fr 1fr!important}}</style>
+            <div>
+              <label style="display:block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:8px;">Nombre Completo</label>
+              <input type="text" placeholder="Ej. Juan Pérez" style="width:100%; padding:14px 16px; background:#111111; border:2px solid #3D3D3D; color:#F0F0F0; font-family:'Barlow',sans-serif; font-size:15px; box-sizing:border-box;" />
+            </div>
+            <div>
+              <label style="display:block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:8px;">Email Corporativo</label>
+              <input type="email" placeholder="juan@empresa.com" style="width:100%; padding:14px 16px; background:#111111; border:2px solid #3D3D3D; color:#F0F0F0; font-family:'Barlow',sans-serif; font-size:15px; box-sizing:border-box;" />
+            </div>
+          </div>
+
+          <div>
+            <label style="display:block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:8px;">Motivo de Consulta</label>
+            <select style="width:100%; padding:14px 16px; background:#111111; border:2px solid #3D3D3D; color:#F0F0F0; font-family:'Barlow',sans-serif; font-size:15px; appearance:none; cursor:pointer; box-sizing:border-box;">
+              <option>Desarrollo Web</option>
+              <option>Estrategia Digital</option>
+              <option>SEO &amp; SEM</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="display:block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:8px;">Mensaje</label>
+            <textarea rows="5" placeholder="Cuéntanos sobre tu proyecto..." style="width:100%; padding:14px 16px; background:#111111; border:2px solid #3D3D3D; color:#F0F0F0; font-family:'Barlow',sans-serif; font-size:15px; resize:none; box-sizing:border-box;"></textarea>
+          </div>
+
+          <button type="submit" class="brut-btn-filled brut-btn" style="width:100%; justify-content:center; font-size:13px;">
+            SOLICITAR ASESORÍA →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section style="width:100%; height:400px; position:relative; background:#111111; border-bottom:2px solid #2A2A2A; overflow:hidden;">
+    <img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP"
+      alt="Mapa"
+      style="width:100%; height:100%; object-fit:cover; filter:grayscale(100%) brightness(0.5) contrast(1.2); display:block;"
+    />
+    <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+      <div style="background:#AAFF00; color:#0A0A0A; padding:16px 28px; border:2px solid #88CC00; box-shadow:4px 4px 0 #0A0A0A; display:flex; align-items:center; gap:10px;">
+        <span class="material-symbols-outlined" style="font-size:20px; font-variation-settings:'FILL' 1;">location_on</span>
+        <span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; text-transform:uppercase; letter-spacing:0.02em;">Visítanos en Madrid</span>
+      </div>
+    </div>
+  </section>
+
+</Layout>

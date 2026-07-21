@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desarrollo Web | Plantilla 2</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{border-radius:0!important;}
+body{font-family:'Barlow',sans-serif;background:#0A0A0A;color:#F0F0F0;}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:#F0F0F0;}
+.brut-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid #AAFF00;background:transparent;color:#AAFF00;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 28px;cursor:pointer;box-shadow:3px 3px 0 #AAFF00;transition:all 150ms;text-decoration:none;}
+.brut-btn:hover{background:#AAFF00;color:#0A0A0A;box-shadow:5px 5px 0 #88CC00;transform:translate(-1px,-1px);}
+.brut-btn-dark{border-color:#0A0A0A;color:#0A0A0A;box-shadow:3px 3px 0 #0A0A0A;}
+.brut-btn-dark:hover{background:#0A0A0A;color:#AAFF00;}
+.brut-section-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#AAFF00;display:block;}
+.brut-reveal{opacity:0;transform:translateY(20px);transition:opacity 250ms,transform 250ms;}
+.brut-reveal.visible{opacity:1;transform:none;}
+header{background:#0A0A0A;border-bottom:2px solid transparent;transition:border-color 200ms;}
+header.scrolled{border-bottom-color:#AAFF00;}
+nav a{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-decoration:none;transition:color 150ms;}
+nav a:hover{color:#AAFF00;}
+section{border-bottom:2px solid #2A2A2A;}
+img{filter:contrast(1.05) saturate(0.85);}
+</style>
+</head>
+<body>
+<header id="site-header" style="position:sticky;top:0;z-index:50;">
+<nav style="display:flex;justify-content:space-between;align-items:center;padding:0 24px;max-width:1280px;margin:0 auto;height:80px;">
+<a href="../index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;text-decoration:none;">PLANTILLA 2.</a>
+<div style="display:flex;gap:32px;"><a href="../index.html">Inicio</a><a href="../nosotros.html">Nosotros</a><a href="../index.html#servicios" style="color:#AAFF00;">Servicios</a><a href="../contacto.html">Contacto</a></div>
+<a href="../contacto.html" class="brut-btn">Contáctanos</a>
+</nav></header>
+
+<!-- HERO -->
+<section style="background:#0A0A0A;padding:100px 24px 80px;border-bottom:4px solid #AAFF00;border-left:4px solid #AAFF00;">
+<div style="max-width:1280px;margin:0 auto;">
+<span class="brut-section-label" style="margin-bottom:16px;">[SERVICIO / 01]</span>
+<h1 style="font-size:clamp(52px,8vw,100px);line-height:0.92;margin-bottom:24px;">DESARROLLO<br/><span style="color:#AAFF00;">WEB</span></h1>
+<p style="font-family:'Barlow',sans-serif;font-size:18px;color:#888;line-height:1.65;max-width:600px;margin-bottom:48px;">Construimos plataformas a medida que son rápidas, adaptables y optimizadas para convertir visitas en clientes reales.</p>
+<div style="max-width:900px;border:2px solid #3D3D3D;box-shadow:6px 6px 0 #AAFF00;overflow:hidden;">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Desarrollo Web" style="width:100%;display:block;" /></div>
+</div></section>
+
+<!-- FEATURES -->
+<section style="background:#191919;border-top:4px solid #AAFF00;">
+<div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);">
+<div style="padding:40px 32px;border-right:2px solid #2A2A2A;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">speed</span><h3 style="font-size:20px;margin-bottom:8px;">Alto Rendimiento</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Webs ultrarrápidas optimizadas para Core Web Vitals.</p></div>
+<div style="padding:40px 32px;border-right:2px solid #2A2A2A;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">devices</span><h3 style="font-size:20px;margin-bottom:8px;">Responsive Design</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Adaptadas a móvil, tablet y escritorio sin concesiones.</p></div>
+<div style="padding:40px 32px;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">trending_up</span><h3 style="font-size:20px;margin-bottom:8px;">Conversión Óptima</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Diseñadas para convertir visitantes en clientes.</p></div>
+</div></section>
+
+<!-- PLANES -->
+<section style="background:#111111;padding:80px 24px;">
+<div style="max-width:1280px;margin:0 auto;">
+<span class="brut-section-label" style="margin-bottom:8px;">[02] / Nuestros planes</span>
+<h2 style="font-size:clamp(32px,4vw,52px);margin-bottom:48px;">Elige el plan <span style="color:#AAFF00;">ideal para ti</span></h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#2A2A2A;border:2px solid #2A2A2A;">
+<div class="brut-reveal" style="background:#111111;padding:28px;display:flex;flex-direction:column;">
+<h3 style="font-size:22px;margin-bottom:8px;">Landing Page</h3>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:#AAFF00;margin-bottom:20px;">$13,000 - $17,400</div>
+<ul style="list-style:none;padding:0;margin:0 0 24px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Diseño personalizado</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>1 página optimizada</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>SEO básico</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Formulario de contacto</li>
+</ul>
+<a href="../contacto.html" class="brut-btn" style="font-size:12px;padding:12px 20px;">CONTRATAR →</a></div>
+
+<div class="brut-reveal" style="background:#AAFF00;padding:28px;display:flex;flex-direction:column;position:relative;">
+<div style="position:absolute;top:0;left:0;right:0;background:#FF3C00;padding:6px;text-align:center;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;text-transform:uppercase;color:#fff;">RECOMENDADO</span></div>
+<div style="padding-top:32px;">
+<h3 style="font-size:22px;margin-bottom:8px;color:#0A0A0A;">Web Corporativa</h3>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:#1A2600;margin-bottom:20px;">$14,500 - $20,300</div>
+<ul style="list-style:none;padding:0;margin:0 0 24px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>Hasta 5 páginas</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>Blog integrado</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>SEO avanzado</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>Panel de admin</li>
+</ul>
+<a href="../contacto.html" class="brut-btn-dark brut-btn" style="font-size:12px;padding:12px 20px;">CONTRATAR →</a>
+</div></div>
+
+<div class="brut-reveal" style="background:#111111;padding:28px;display:flex;flex-direction:column;">
+<h3 style="font-size:22px;margin-bottom:8px;">E-Commerce</h3>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:#AAFF00;margin-bottom:20px;">$17,400 - $26,100</div>
+<ul style="list-style:none;padding:0;margin:0 0 24px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Tienda completa</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Pasarela de pago</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Gestión inventario</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Reportes de ventas</li>
+</ul>
+<a href="../contacto.html" class="brut-btn" style="font-size:12px;padding:12px 20px;">CONTRATAR →</a></div>
+
+<div class="brut-reveal" style="background:#111111;padding:28px;display:flex;flex-direction:column;">
+<h3 style="font-size:22px;margin-bottom:8px;">E-Com Avanzado</h3>
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:#AAFF00;margin-bottom:20px;">$23,200 - $29,900</div>
+<ul style="list-style:none;padding:0;margin:0 0 24px;flex-grow:1;display:flex;flex-direction:column;gap:8px;">
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Multi-idioma</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>App móvil incluida</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>API personalizada</li>
+<li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:14px;color:#888;"><span style="color:#AAFF00;">✓</span>Soporte premium 24/7</li>
+</ul>
+<a href="../contacto.html" class="brut-btn" style="font-size:12px;padding:12px 20px;">CONTRATAR →</a></div>
+</div></div></section>
+
+<!-- CTA -->
+<section style="background:#AAFF00;padding:64px 24px;">
+<div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+<div><h2 style="font-size:clamp(28px,4vw,48px);color:#0A0A0A;margin-bottom:8px;">¿Listo para lanzar tu proyecto web?</h2><p style="font-family:'Barlow',sans-serif;font-size:16px;color:#1A2600;">Contáctanos y empieza hoy mismo.</p></div>
+<a href="../contacto.html" class="brut-btn-dark brut-btn" style="white-space:nowrap;">SOLICITAR PRESUPUESTO →</a>
+</div></section>
+
+<!-- FOOTER -->
+<footer style="background:#0A0A0A;border-top:4px solid #AAFF00;padding:64px 24px 40px;">
+<div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+<div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;">PLANTILLA 2.</div>
+<p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin:0;">&copy; 2026 PLANTILLA 2</p>
+</div></footer>
+<script>
+const h=document.getElementById('site-header');
+window.addEventListener('scroll',()=>{if(window.scrollY>40){h.classList.add('scrolled');h.style.borderBottomColor='#AAFF00';}else{h.classList.remove('scrolled');h.style.borderBottomColor='transparent';}},{passive:true});
+const obs=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.1});
+document.querySelectorAll('.brut-reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>

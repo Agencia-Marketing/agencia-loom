@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plantilla 2 | Agencia Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        bg: "#0A0A0A", surface: "#111111", "surface-raised": "#191919",
+        border: "#2A2A2A", "border-strong": "#3D3D3D",
+        accent: "#AAFF00", "on-accent": "#0A0A0A", "accent-dark": "#88CC00",
+        secondary: "#FF3C00", text: "#F0F0F0", "text-muted": "#888888"
+      },
+      borderRadius: { DEFAULT:"0", sm:"0", md:"0", lg:"0", xl:"0", "2xl":"0", full:"0" },
+      fontFamily: { display:["Barlow Condensed","sans-serif"], mono:["JetBrains Mono","monospace"], body:["Barlow","sans-serif"] }
+    }
+  }
+}
+</script>
+<style>
+*, *::before, *::after { border-radius: 0 !important; }
+:root {
+  --color-bg: #0A0A0A; --color-surface: #111111; --color-surface-raised: #191919;
+  --color-border: #2A2A2A; --color-border-strong: #3D3D3D;
+  --color-accent: #AAFF00; --color-accent-dark: #88CC00; --color-accent-on: #0A0A0A;
+  --color-secondary: #FF3C00; --color-text: #F0F0F0; --color-text-muted: #888888;
+}
+body { font-family:'Barlow',sans-serif; background:#0A0A0A; color:#F0F0F0; -webkit-font-smoothing:antialiased; }
+h1,h2,h3,h4,h5,h6 { font-family:'Barlow Condensed',sans-serif; font-weight:900; text-transform:uppercase; color:#F0F0F0; }
+.brut-btn { display:inline-flex; align-items:center; gap:8px; border:2px solid #AAFF00; background:transparent; color:#AAFF00; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; padding:14px 28px; cursor:pointer; box-shadow:3px 3px 0 #AAFF00; transition:all 150ms ease-out; text-decoration:none; }
+.brut-btn:hover { background:#AAFF00; color:#0A0A0A; box-shadow:5px 5px 0 #88CC00; transform:translate(-1px,-1px); }
+.brut-btn:active { transform:translate(2px,2px); box-shadow:none; }
+.brut-btn-dark { border-color:#0A0A0A; color:#0A0A0A; box-shadow:3px 3px 0 #0A0A0A; }
+.brut-btn-dark:hover { background:#0A0A0A; color:#AAFF00; }
+.brut-card { border:2px solid #3D3D3D; background:#111111; box-shadow:4px 4px 0 #3D3D3D; transition:all 150ms ease-out; }
+.brut-card:hover { transform:translate(-2px,-2px); box-shadow:6px 6px 0 #AAFF00; border-color:#AAFF00; }
+.brut-tag { display:inline-block; background:#AAFF00; color:#0A0A0A; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; padding:4px 10px; }
+.brut-section-label { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#AAFF00; display:block; }
+.brut-reveal { opacity:0; transform:translateY(20px); transition:opacity 250ms ease-out,transform 250ms ease-out; }
+.brut-reveal.visible { opacity:1; transform:none; }
+.brut-grid-bg { background-color:#0A0A0A; background-image:linear-gradient(#2A2A2A 1px,transparent 1px),linear-gradient(90deg,#2A2A2A 1px,transparent 1px); background-size:48px 48px; }
+header { background:#0A0A0A !important; border-bottom:2px solid transparent !important; transition:border-color 200ms ease-out; }
+header.scrolled { border-bottom-color:#AAFF00 !important; }
+nav a { font-family:'JetBrains Mono',monospace !important; font-size:12px !important; font-weight:700 !important; text-transform:uppercase !important; letter-spacing:0.08em !important; color:#888 !important; transition:color 150ms ease-out !important; text-decoration:none; }
+nav a:hover { color:#AAFF00 !important; }
+section { border-bottom:2px solid #2A2A2A; }
+img { filter:contrast(1.05) saturate(0.85); border-radius:0 !important; }
+::selection { background:#AAFF00; color:#0A0A0A; }
+::-webkit-scrollbar { width:6px; } ::-webkit-scrollbar-track { background:#111; } ::-webkit-scrollbar-thumb { background:#AAFF00; }
+@media(prefers-reduced-motion:reduce){ .brut-reveal{opacity:1;transform:none;} }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header" style="position:sticky;top:0;z-index:50;">
+  <nav style="display:flex;justify-content:space-between;align-items:center;padding:0 24px;max-width:1280px;margin:0 auto;height:80px;">
+    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;text-decoration:none;">PLANTILLA 2.</a>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <a href="contacto.html" class="brut-btn">Contáctanos</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="brut-grid-bg" style="padding:120px 24px 80px;border-bottom:2px solid #3D3D3D;">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+    <div class="brut-reveal">
+      <span class="brut-section-label" style="margin-bottom:20px;">// Agencia Digital</span>
+      <h1 style="font-size:clamp(52px,8vw,96px);line-height:0.95;letter-spacing:-0.02em;margin-bottom:28px;">MAXIMIZA<br/><span style="color:#AAFF00;">EL IMPACTO</span><br/>DE TU MARCA</h1>
+      <p style="font-size:18px;color:#888;line-height:1.65;max-width:480px;margin-bottom:36px;">Eleva tu presencia digital con estrategias de alto rendimiento diseñadas para el éxito sostenido de tu empresa.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="brut-btn">Ver Servicios →</button>
+        <a href="contacto.html" class="brut-btn" style="border-color:#FF3C00;color:#FF3C00;box-shadow:3px 3px 0 #FF3C00;">Hablar con un experto</a>
+      </div>
+    </div>
+    <div class="brut-reveal" style="position:relative;">
+      <div style="position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:2px solid #AAFF00;z-index:0;"></div>
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Agencia Digital" style="width:100%;position:relative;z-index:1;border:2px solid #3D3D3D;display:block;" />
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" style="background:#111111;padding:80px 24px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;padding-bottom:24px;border-bottom:2px solid #3D3D3D;">
+      <div>
+        <span class="brut-section-label">[01] / Servicios</span>
+        <h2 style="font-size:clamp(36px,5vw,56px);margin-top:8px;">Soluciones para tu<br/><span style="color:#AAFF00;">crecimiento digital</span></h2>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#2A2A2A;border:2px solid #2A2A2A;">
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">code</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/01</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Desarrollo Web</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Plataformas a medida rápidas, adaptables y optimizadas para convertir visitas en clientes.</p>
+        <a href="servicios/desarrollo-web.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">smart_toy</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/02</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Agentes de IA</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Agentes inteligentes para automatizar atención y aumentar ventas 24/7.</p>
+        <a href="servicios/agentes-ia.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">palette</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/03</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Diseño Gráfico</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Creaciones visuales atractivas y de nivel premium para tu marca.</p>
+        <a href="servicios/diseno-grafico.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">diversity_3</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/04</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Gestión de Redes</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Gestión experta y estratégica para incrementar tu notoriedad de marca.</p>
+        <a href="servicios/redes-sociales.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">ads_click</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/05</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Campañas de Ads</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Campañas optimizadas de alto rendimiento en Meta, Google y TikTok.</p>
+        <a href="servicios/campanas-publicitarias.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">movie</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/06</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Videomarketing</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Piezas audiovisuales dinámicas que conectan con tu audiencia objetivo.</p>
+        <a href="servicios/videomarketing.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">filter_alt</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/07</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Embudos de Venta</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Sistemas automatizados para llevar prospectos a la conversión final.</p>
+        <a href="servicios/embudos-venta.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">campaign</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/08</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Creadores UGC</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Contenido auténtico de usuarios reales que genera confianza en tu marca.</p>
+        <a href="servicios/creadores-ugc.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+      <div class="brut-card brut-reveal" style="padding:32px;display:flex;flex-direction:column;height:100%;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:2px solid #2A2A2A;margin-bottom:20px;">
+          <span class="material-symbols-outlined" style="font-size:28px;color:#AAFF00;">history_edu</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3D3D3D;">/09</span>
+        </div>
+        <h3 style="font-size:22px;margin-bottom:12px;">Creación de Contenido</h3>
+        <p style="font-size:15px;color:#888;line-height:1.6;flex-grow:1;margin-bottom:24px;">Diseños y piezas visuales que captan la atención y posicionan tu marca.</p>
+        <a href="servicios/creacion-contenido.html" class="brut-btn" style="align-self:flex-start;font-size:12px;padding:10px 20px;">+ Info →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section style="background:#AAFF00;padding:80px 24px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="border-bottom:4px solid #0A0A0A;padding-bottom:32px;margin-bottom:0;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#1A2600;">[02] / Por qué elegirnos</span>
+      <h2 style="font-size:clamp(36px,5vw,56px);color:#0A0A0A;margin-top:8px;">Razones para trabajar con nosotros</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;border-left:2px solid #0A0A0A;">
+      <div style="padding:48px;border-right:2px solid #0A0A0A;border-bottom:2px solid #0A0A0A;">
+        <h3 style="font-size:28px;color:#0A0A0A;margin-bottom:12px;">Amplia Trayectoria</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#1A2600;line-height:1.6;">Años de experiencia liderando campañas de marketing exitosas en el sector digital.</p>
+      </div>
+      <div style="padding:48px;border-right:2px solid #0A0A0A;border-bottom:2px solid #0A0A0A;">
+        <h3 style="font-size:28px;color:#0A0A0A;margin-bottom:12px;">Equipo de Especialistas</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#1A2600;line-height:1.6;">Profesionales altamente cualificados en cada área del marketing digital.</p>
+      </div>
+      <div style="padding:48px;border-right:2px solid #0A0A0A;">
+        <h3 style="font-size:28px;color:#0A0A0A;margin-bottom:12px;">Creatividad e Innovación</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#1A2600;line-height:1.6;">Ideas bien ejecutadas para diferenciar tu marca en un entorno saturado.</p>
+      </div>
+      <div style="padding:48px;border-right:2px solid #0A0A0A;">
+        <h3 style="font-size:28px;color:#0A0A0A;margin-bottom:12px;">Enfoque en Resultados</h3>
+        <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#1A2600;line-height:1.6;">Datos reales para optimizar cada fase de tu estrategia digital.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="background:#0A0A0A;padding:80px 24px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="border:2px solid #3D3D3D;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;">
+      <div style="padding:64px 48px;" class="brut-reveal">
+        <span class="brut-section-label" style="margin-bottom:16px;">[03] / Empieza hoy</span>
+        <h2 style="font-size:clamp(36px,5vw,52px);line-height:1.0;margin-bottom:20px;">Por qué Plantilla 2 es tu<br/><span style="color:#AAFF00;">mejor opción</span></h2>
+        <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#888;line-height:1.65;margin-bottom:36px;">Nuestro enfoque diferente nos permite ofrecer soluciones que realmente impactan en el crecimiento de tu negocio.</p>
+        <a href="contacto.html" class="brut-btn">Empieza ahora →</a>
+      </div>
+      <div style="border-left:2px solid #3D3D3D;overflow:hidden;">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzci1QtmfbUubFYJE_UBdNN2kzW2bYIBjN9nyBvQ7tYyRjqvSMc4p6b0lGlCC2UO-CceR-OUDeYhZ5rfjjVyQ0muUvBm5qjS6ZBn3Tv1nHWDonfspONEYlW7AdcmDvcm_Nc2ac3M-0cd4UNpUfTNXCEXXI-jLWclXiv8Tv-xgMT2f7LtqDSwcPbSjSPhQHjAkGLbJTgqy2K21Dvls0EIdd5u1gv9DZdCoQyV2roKW-Q_ZcmIkfIBwljZ9GzVXn0lJaZQA2OIP6bx" alt="Especialista" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#0A0A0A;border-top:4px solid #AAFF00;padding:80px 24px 40px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-bottom:64px;">
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;margin-bottom:16px;">PLANTILLA 2.</div>
+        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;line-height:1.6;">Soluciones digitales de alto impacto para marcas que quieren destacar.</p>
+      </div>
+      <div>
+        <div class="brut-section-label" style="margin-bottom:16px;">// Contacto</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;">+34 639 494 000</li>
+          <li style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;">contacto@plantilla2.com</li>
+          <li style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;">Madrid, España</li>
+        </ul>
+      </div>
+      <div>
+        <div class="brut-section-label" style="margin-bottom:16px;">// Páginas</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="index.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Inicio</a></li>
+          <li><a href="nosotros.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Nosotros</a></li>
+          <li><a href="index.html#servicios" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Servicios</a></li>
+          <li><a href="contacto.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="brut-section-label" style="margin-bottom:16px;">// Links</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Blog</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">FAQ</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Privacidad</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="padding-top:24px;border-top:2px solid #2A2A2A;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin:0;">&copy; 2026 PLANTILLA 2 &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+      <div style="display:flex;gap:24px;">
+        <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#555'">Términos</a>
+        <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#555'">Soporte</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const header = document.getElementById('site-header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) { header.classList.add('scrolled'); header.style.borderBottomColor = '#AAFF00'; }
+  else { header.classList.remove('scrolled'); header.style.borderBottomColor = 'transparent'; }
+}, { passive: true });
+const reveals = document.querySelectorAll('.brut-reveal');
+if (reveals.length) {
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }), { threshold: 0.1 });
+  reveals.forEach(el => obs.observe(el));
+}
+</script>
+</body>
+</html>

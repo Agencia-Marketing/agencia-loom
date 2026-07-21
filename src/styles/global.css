@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   PLANTILLA 2 — NEO-BRUTALIST DESIGN SYSTEM
+   ============================================================ */
+
+:root {
+  /* Brand colors — change these per client */
+  --color-bg:              #0A0A0A;
+  --color-surface:         #111111;
+  --color-surface-raised:  #191919;
+  --color-border:          #2A2A2A;
+  --color-border-strong:   #3D3D3D;
+
+  --color-accent:          #AAFF00;
+  --color-accent-rgb:      170, 255, 0;
+  --color-accent-dark:     #88CC00;
+  --color-accent-dim:      #1A2600;
+  --color-accent-on:       #0A0A0A;
+
+  --color-secondary:       #FF3C00;
+  --color-secondary-rgb:   255, 60, 0;
+  --color-secondary-dim:   #1F0900;
+
+  --color-text:            #F0F0F0;
+  --color-text-muted:      #888888;
+  --color-text-dim:        #555555;
+
+  --color-footer-bg:       #0A0A0A;
+  --color-footer-border:   #AAFF00;
+}
+
+/* ---- Base ---- */
+@layer base {
+  *, *::before, *::after {
+    border-radius: 0 !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg);
+  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    text-wrap: balance;
+  }
+
+  p { color: var(--color-text-muted); }
+  li { color: var(--color-text-muted); }
+
+  img {
+    filter: contrast(1.05) saturate(0.85);
+    border-radius: 0 !important;
+    box-shadow: none;
+  }
+
+  input, textarea, select {
+    border-radius: 0 !important;
+    background: var(--color-bg);
+    border: 2px solid var(--color-border-strong);
+    color: var(--color-text);
+    font-family: 'Barlow', sans-serif;
+    transition: border-color 150ms ease-out;
+    outline: none;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--color-accent);
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-surface); }
+  ::-webkit-scrollbar-thumb { background: var(--color-accent); border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-accent-dark); }
+}
+
+/* ---- Components ---- */
+@layer components {
+
+  /* Primary button */
+  .brut-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid var(--color-accent);
+    background: transparent;
+    color: var(--color-accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 14px 28px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 3px 0 var(--color-accent);
+    transition: transform 150ms ease-out, box-shadow 150ms ease-out, background 150ms ease-out, color 150ms ease-out;
+    text-decoration: none;
+  }
+
+  .brut-btn:hover {
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    box-shadow: 5px 5px 0 var(--color-accent-dark);
+    transform: translate(-1px, -1px);
+  }
+
+  .brut-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 var(--color-accent);
+  }
+
+  /* Dark-on-accent button (used on accent backgrounds) */
+  .brut-btn-dark {
+    border-color: var(--color-accent-on);
+    color: var(--color-accent-on);
+    box-shadow: 3px 3px 0 var(--color-accent-on);
+  }
+
+  .brut-btn-dark:hover {
+    background: var(--color-accent-on);
+    color: var(--color-accent);
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.5);
+  }
+
+  /* Secondary (orange) button */
+  .brut-btn-secondary {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    box-shadow: 3px 3px 0 var(--color-secondary);
+  }
+
+  .brut-btn-secondary:hover {
+    background: var(--color-secondary);
+    color: var(--color-accent-on);
+    box-shadow: 5px 5px 0 #CC3000;
+    transform: translate(-1px, -1px);
+  }
+
+  /* Filled accent button */
+  .brut-btn-filled {
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    border-color: var(--color-accent-dark);
+    box-shadow: 3px 3px 0 var(--color-accent-dark);
+  }
+
+  .brut-btn-filled:hover {
+    background: var(--color-accent-dark);
+    box-shadow: 5px 5px 0 #667700;
+    transform: translate(-1px, -1px);
+  }
+
+  /* Card */
+  .brut-card {
+    border: 2px solid var(--color-border-strong);
+    background: var(--color-surface);
+    box-shadow: 4px 4px 0 var(--color-border-strong);
+    transition: transform 150ms ease-out, box-shadow 150ms ease-out, border-color 150ms ease-out;
+  }
+
+  .brut-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  /* Tag/badge */
+  .brut-tag {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 0 !important;
+  }
+
+  .brut-tag-secondary {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+
+  .brut-tag-muted {
+    background: var(--color-border-strong);
+    color: var(--color-text-muted);
+  }
+
+  /* Section label (monospace prefix) */
+  .brut-section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-accent);
+    display: block;
+  }
+
+  /* Reveal animation */
+  .brut-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 250ms ease-out, transform 250ms ease-out;
+  }
+
+  .brut-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .brut-reveal-delay-1 { transition-delay: 80ms; }
+  .brut-reveal-delay-2 { transition-delay: 160ms; }
+  .brut-reveal-delay-3 { transition-delay: 240ms; }
+  .brut-reveal-delay-4 { transition-delay: 320ms; }
+  .brut-reveal-delay-5 { transition-delay: 400ms; }
+  .brut-reveal-delay-6 { transition-delay: 480ms; }
+  .brut-reveal-delay-7 { transition-delay: 560ms; }
+  .brut-reveal-delay-8 { transition-delay: 640ms; }
+  .brut-reveal-delay-9 { transition-delay: 720ms; }
+
+  /* Grid line background pattern */
+  .brut-grid-bg {
+    background-color: var(--color-bg);
+    background-image:
+      linear-gradient(var(--color-border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Thick accent border */
+  .brut-accent-border-top    { border-top: 4px solid var(--color-accent); }
+  .brut-accent-border-left   { border-left: 4px solid var(--color-accent); }
+  .brut-accent-border-bottom { border-bottom: 4px solid var(--color-accent); }
+
+  /* Divider */
+  .brut-divider {
+    border: 0;
+    border-top: 2px solid var(--color-border-strong);
+    margin: 0;
+  }
+
+  /* Stat number */
+  .brut-stat {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--color-accent);
+    letter-spacing: -0.02em;
+  }
+
+  /* Pricing plan card featured */
+  .brut-plan-featured {
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    border: 2px solid var(--color-accent-dark);
+    box-shadow: 6px 6px 0 var(--color-accent-dark);
+  }
+
+  .brut-plan-featured h3,
+  .brut-plan-featured p,
+  .brut-plan-featured span,
+  .brut-plan-featured li {
+    color: var(--color-accent-on) !important;
+  }
+}
+
+/* ---- Header ---- */
+header {
+  background: var(--color-bg) !important;
+  border-bottom: 2px solid transparent !important;
+  transition: border-color 200ms ease-out;
+}
+
+header.scrolled {
+  border-bottom-color: var(--color-accent) !important;
+}
+
+nav a {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--color-text-muted) !important;
+  transition: color 150ms ease-out !important;
+}
+
+nav a:hover {
+  color: var(--color-accent) !important;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: var(--color-footer-bg) !important;
+  border-top: 4px solid var(--color-footer-border) !important;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
+footer .font-bold {
+  font-family: 'Barlow Condensed', sans-serif !important;
+  text-transform: uppercase !important;
+  color: var(--color-text) !important;
+}
+
+footer p, footer li, footer a, footer span {
+  font-family: 'Barlow', sans-serif !important;
+  color: var(--color-text-muted) !important;
+}
+
+footer a:hover { color: var(--color-accent) !important; }
+
+footer .brut-section-label { color: var(--color-accent) !important; }
+
+/* ---- Sections ---- */
+section { border-bottom: 2px solid var(--color-border); }
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .brut-reveal { opacity: 1; transform: none; }
+}

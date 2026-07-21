@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creación de Contenido | Plantilla 2</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{border-radius:0!important;}
+body{font-family:'Barlow',sans-serif;background:#0A0A0A;color:#F0F0F0;}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:#F0F0F0;}
+.brut-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid #AAFF00;background:transparent;color:#AAFF00;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 28px;cursor:pointer;box-shadow:3px 3px 0 #AAFF00;transition:all 150ms;text-decoration:none;}
+.brut-btn:hover{background:#AAFF00;color:#0A0A0A;box-shadow:5px 5px 0 #88CC00;transform:translate(-1px,-1px);}
+.brut-btn-dark{border-color:#0A0A0A;color:#0A0A0A;box-shadow:3px 3px 0 #0A0A0A;}
+.brut-btn-dark:hover{background:#0A0A0A;color:#AAFF00;}
+.brut-section-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#AAFF00;display:block;}
+.brut-reveal{opacity:0;transform:translateY(20px);transition:opacity 250ms,transform 250ms;}
+.brut-reveal.visible{opacity:1;transform:none;}
+header{background:#0A0A0A;border-bottom:2px solid transparent;transition:border-color 200ms;}
+header.scrolled{border-bottom-color:#AAFF00;}
+nav a{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-decoration:none;transition:color 150ms;}
+nav a:hover{color:#AAFF00;}
+section{border-bottom:2px solid #2A2A2A;}
+img{filter:contrast(1.05) saturate(0.85);}
+</style></head>
+<body>
+<header id="site-header" style="position:sticky;top:0;z-index:50;">
+<nav style="display:flex;justify-content:space-between;align-items:center;padding:0 24px;max-width:1280px;margin:0 auto;height:80px;">
+<a href="../index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;text-decoration:none;">PLANTILLA 2.</a>
+<div style="display:flex;gap:32px;"><a href="../index.html">Inicio</a><a href="../nosotros.html">Nosotros</a><a href="../index.html#servicios" style="color:#AAFF00;">Servicios</a><a href="../contacto.html">Contacto</a></div>
+<a href="../contacto.html" class="brut-btn">Contáctanos</a>
+</nav></header>
+
+<section style="background:#0A0A0A;padding:100px 24px 80px;border-bottom:4px solid #AAFF00;border-left:4px solid #AAFF00;">
+<div style="max-width:1280px;margin:0 auto;">
+<span class="brut-section-label" style="margin-bottom:16px;">[SERVICIO / 09]</span>
+<h1 style="font-size:clamp(52px,8vw,100px);line-height:0.92;margin-bottom:24px;">CREACIÓN DE<br/><span style="color:#AAFF00;">CONTENIDO</span></h1>
+<p style="font-family:'Barlow',sans-serif;font-size:18px;color:#888;line-height:1.65;max-width:600px;margin-bottom:48px;">Despierta la creatividad de tu negocio con piezas visuales diseñadas para captar la atención de tu audiencia y elevar el valor de tu marca.</p>
+<div style="max-width:900px;border:2px solid #3D3D3D;box-shadow:6px 6px 0 #AAFF00;overflow:hidden;">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi3HyL4CFp_FZExC_kzlNCA6qGuLRiIopI9ejP3t1eBTAM7e_CyZmVE5ZEP8csPCh1guMUBMElJ4sSaMhyV_jL23X97tPIFTD9x9pf0lHUHVdmrM_LnhI4FX1Sd3l-MyUOJxnM8m-pB7CjXayOIuYICu5rJhJ34-J2zKKAgAaAUuLd4ruS1dtvwEoTekUs5sbNYQMesIH6rbtUloVB0pt3NaNczMeXy2QPihenaGhLJBD3QBHaIsZhuLcDKvY20RzRaA4I_3PIvFZe" alt="Creación de Contenido" style="width:100%;display:block;"/></div>
+</div></section>
+
+<section style="background:#191919;border-top:4px solid #AAFF00;">
+<div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);">
+<div style="padding:40px 32px;border-right:2px solid #2A2A2A;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">image</span><h3 style="font-size:20px;margin-bottom:8px;">Diseño Visual</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Gráficos impactantes en Canva con editables para tu equipo.</p></div>
+<div style="padding:40px 32px;border-right:2px solid #2A2A2A;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">movie</span><h3 style="font-size:20px;margin-bottom:8px;">Formato Video</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Hasta el 50% de cada paquete en formato video o Reels.</p></div>
+<div style="padding:40px 32px;"><span class="material-symbols-outlined" style="font-size:32px;color:#AAFF00;display:block;margin-bottom:16px;">bolt</span><h3 style="font-size:20px;margin-bottom:8px;">Entrega Rápida</h3><p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#888;line-height:1.5;">Piezas listas en 1 a 6 días hábiles según el paquete.</p></div>
+</div></section>
+
+<section style="background:#111111;padding:80px 24px;">
+<div style="max-width:1280px;margin:0 auto;">
+<span class="brut-section-label" style="margin-bottom:8px;">[02] / Paquetes de diseño</span>
+<h2 style="font-size:clamp(32px,4vw,52px);margin-bottom:48px;">Contenido visual <span style="color:#AAFF00;">que convierte</span></h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#2A2A2A;border:2px solid #2A2A2A;">
+<div class="brut-reveal" style="background:#111111;padding:24px;display:flex;flex-direction:column;"><h3 style="font-size:20px;margin-bottom:4px;">Diseño Individual</h3><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#555;margin-bottom:8px;">1 diseño (imagen fija)</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:#AAFF00;margin-bottom:4px;">$245</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#555;margin-bottom:16px;">Entrega: 1-2 días</div><ul style="list-style:none;padding:0;margin:0 0 20px;flex-grow:1;display:flex;flex-direction:column;gap:8px;"><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Editable en CANVA</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>1 misma línea gráfica</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Formato adaptable</li></ul><a href="../contacto.html" class="brut-btn" style="font-size:11px;padding:10px 16px;">CONTRATAR →</a></div>
+<div class="brut-reveal" style="background:#AAFF00;padding:24px;display:flex;flex-direction:column;position:relative;"><div style="position:absolute;top:0;left:0;right:0;background:#FF3C00;padding:6px;text-align:center;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;text-transform:uppercase;color:#fff;">RECOMENDADO</span></div><div style="padding-top:32px;"><h3 style="font-size:20px;margin-bottom:4px;color:#0A0A0A;">Pack 15 Diseños</h3><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#1A2600;margin-bottom:8px;">15 diseños (hasta 8 en video)</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:#1A2600;margin-bottom:4px;">$2,200</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#1A2600;margin-bottom:16px;">Entrega: 5 días</div><ul style="list-style:none;padding:0;margin:0 0 20px;flex-grow:1;display:flex;flex-direction:column;gap:8px;"><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>Editables en CANVA</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>1 línea gráfica</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#1A2600;"><span style="color:#0A0A0A;">✓</span>Incluye videos/Reels</li></ul><a href="../contacto.html" class="brut-btn-dark brut-btn" style="font-size:11px;padding:10px 16px;">CONTRATAR →</a></div></div>
+<div class="brut-reveal" style="background:#111111;padding:24px;display:flex;flex-direction:column;"><h3 style="font-size:20px;margin-bottom:4px;">Pack 20 Diseños</h3><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#555;margin-bottom:8px;">20 diseños (hasta 10 en video)</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:#AAFF00;margin-bottom:4px;">$2,800</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#555;margin-bottom:16px;">Entrega: 5 días</div><ul style="list-style:none;padding:0;margin:0 0 20px;flex-grow:1;display:flex;flex-direction:column;gap:8px;"><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Editables en CANVA</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>1 línea gráfica</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Variantes de formato</li></ul><a href="../contacto.html" class="brut-btn" style="font-size:11px;padding:10px 16px;">CONTRATAR →</a></div>
+<div class="brut-reveal" style="background:#111111;padding:24px;display:flex;flex-direction:column;"><h3 style="font-size:20px;margin-bottom:4px;">Pack 30 Diseños</h3><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#555;margin-bottom:8px;">30 diseños (hasta 15 en video)</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:#AAFF00;margin-bottom:4px;">$3,000</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#555;margin-bottom:16px;">Entrega: 6 días</div><ul style="list-style:none;padding:0;margin:0 0 20px;flex-grow:1;display:flex;flex-direction:column;gap:8px;"><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Editables en CANVA</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>1 línea gráfica</li><li style="display:flex;gap:8px;font-family:'Barlow',sans-serif;font-size:13px;color:#888;"><span style="color:#AAFF00;">✓</span>Pack completo mensual</li></ul><a href="../contacto.html" class="brut-btn" style="font-size:11px;padding:10px 16px;">CONTRATAR →</a></div>
+</div></div></section>
+
+<!-- CTA final -->
+<section style="background:#0A0A0A;padding:64px 24px;">
+<div style="max-width:1280px;margin:0 auto;">
+<div style="background:#AAFF00;border:2px solid #88CC00;box-shadow:6px 6px 0 #88CC00;padding:64px 48px;text-align:center;">
+<h2 style="font-size:clamp(28px,4vw,48px);color:#0A0A0A;margin-bottom:16px;">¿Listo para transformar tu presencia visual?</h2>
+<p style="font-family:'Barlow',sans-serif;font-size:17px;color:#1A2600;line-height:1.65;max-width:480px;margin:0 auto 36px;">Contáctanos y comencemos a diseñar piezas que realmente conecten con tu público.</p>
+<a href="../contacto.html" class="brut-btn-dark brut-btn" style="margin:0 auto;">HABLAR CON UN EXPERTO →</a>
+</div></div></section>
+
+<footer style="background:#0A0A0A;border-top:4px solid #AAFF00;padding:64px 24px 40px;"><div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;"><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;">PLANTILLA 2.</div><p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin:0;">&copy; 2026 PLANTILLA 2</p></div></footer>
+<script>
+const h=document.getElementById('site-header');
+window.addEventListener('scroll',()=>{if(window.scrollY>40){h.classList.add('scrolled');h.style.borderBottomColor='#AAFF00';}else{h.classList.remove('scrolled');h.style.borderBottomColor='transparent';}},{passive:true});
+const obs=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.1});
+document.querySelectorAll('.brut-reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>
