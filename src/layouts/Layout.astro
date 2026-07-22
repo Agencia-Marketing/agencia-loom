@@ -6,6 +6,18 @@ export interface Props {
 
 const { title, currentPage = 'inicio' } = Astro.props;
 import '../styles/global.css';
+
+const services = [
+  { title: 'Desarrollo Web',           slug: 'desarrollo-web' },
+  { title: 'Agentes de IA',            slug: 'agentes-ia' },
+  { title: 'Diseño Gráfico',           slug: 'diseno-grafico' },
+  { title: 'Gestión de Redes',         slug: 'redes-sociales' },
+  { title: 'Campañas de Ads',          slug: 'campanas-publicitarias' },
+  { title: 'Videomarketing',           slug: 'videomarketing' },
+  { title: 'Embudos de Venta',         slug: 'embudos-venta' },
+  { title: 'Creadores UGC',            slug: 'creadores-ugc' },
+  { title: 'Creación de Contenido',    slug: 'creacion-contenido' },
+];
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -32,7 +44,19 @@ import '../styles/global.css';
       <div class="hidden md:flex items-center gap-8">
         <a href="/" style={`font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:${currentPage==='inicio' ? '#0063DA' : '#555555'}`}>Inicio</a>
         <a href="/nosotros" style={`font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:${currentPage==='nosotros' ? '#0063DA' : '#555555'}`}>Nosotros</a>
-        <a href="/#servicios" style={`font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:${currentPage==='servicios' ? '#0063DA' : '#555555'}`}>Servicios</a>
+
+        <div class="nav-dropdown">
+          <a href="/#servicios" class="nav-dropdown-trigger" style={`font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; display:inline-flex; align-items:center; gap:4px; color:${currentPage==='servicios' ? '#0063DA' : '#555555'}`}>
+            Servicios
+            <span class="material-symbols-outlined" style="font-size:16px;">expand_more</span>
+          </a>
+          <div class="nav-dropdown-menu">
+            {services.map(s => (
+              <a href={`/servicios/${s.slug}`} class="nav-dropdown-link">{s.title}</a>
+            ))}
+          </div>
+        </div>
+
         <a href="/contacto" style={`font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:${currentPage==='contacto' ? '#0063DA' : '#555555'}`}>Contacto</a>
       </div>
 
@@ -52,11 +76,69 @@ import '../styles/global.css';
       <div style="padding:24px; display:flex; flex-direction:column; gap:16px;">
         <a href="/" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555555; text-decoration:none;">// Inicio</a>
         <a href="/nosotros" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555555; text-decoration:none;">// Nosotros</a>
-        <a href="/#servicios" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555555; text-decoration:none;">// Servicios</a>
+
+        <details class="mobile-services">
+          <summary style="cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#555555;">// Servicios</summary>
+          <div style="display:flex; flex-direction:column; gap:12px; padding:14px 0 0 16px; border-left:2px solid #0063DA; margin-left:2px;">
+            {services.map(s => (
+              <a href={`/servicios/${s.slug}`} style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; text-decoration:none;">{s.title}</a>
+            ))}
+          </div>
+        </details>
+
         <a href="/contacto" style="font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#0063DA; text-decoration:none;">// Contacto</a>
       </div>
     </div>
   </header>
+
+  <style>
+    /* Desktop dropdown */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(4px);
+      background: #f1f1f1;
+      border: 2px solid #0063DA;
+      box-shadow: 4px 4px 0 #0063DA;
+      min-width: 240px;
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 150ms ease-out, transform 150ms ease-out;
+      z-index: 60;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .nav-dropdown-link {
+      display: block;
+      padding: 10px 20px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 14px;
+      color: #555555;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-dropdown-link:hover { color: #0063DA; background: #e6f0ff; }
+
+    /* Mobile accordion */
+    .mobile-services summary { list-style: none; }
+    .mobile-services summary::-webkit-details-marker { display: none; }
+    .mobile-services summary::after {
+      content: '+';
+      float: right;
+      font-family: 'JetBrains Mono', monospace;
+      color: #0063DA;
+    }
+    .mobile-services[open] summary::after { content: '−'; }
+  </style>
 
   <!-- PAGE CONTENT -->
   <slot />
