@@ -3,23 +3,23 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Diseño Gráfico | Loom" currentPage="servicios">
 
-  <section style="background:#0A0A0A; padding:100px 24px 80px; border-bottom:4px solid #AAFF00; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#AAFF00;"></div>
+  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
+    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
     <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#AAFF00; display:block; margin-bottom:16px;">[SERVICIO / 03]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#F0F0F0; margin-bottom:24px;">
-        DISEÑO<br/><span style="color:#AAFF00;">GRÁFICO</span>
+      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 03]</span>
+      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
+        DISEÑO<br/><span style="color:#0063DA;">GRÁFICO</span>
       </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#888; line-height:1.65; max-width:600px; margin-bottom:48px;">
+      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
         Potenciamos tu marca y generamos una impresión duradera con creaciones visuales atractivas y de nivel premium.
       </p>
-      <div style="max-width:900px; border:2px solid #3D3D3D; box-shadow:6px 6px 0 #AAFF00; overflow:hidden;">
+      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Diseño Gráfico" style="width:100%; display:block;" />
       </div>
     </div>
   </section>
 
-  <section style="background:#191919; border-top:4px solid #AAFF00; border-bottom:2px solid #2A2A2A;">
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="dg-feat">
       <style>.dg-feat{grid-template-columns:1fr!important} @media(min-width:768px){.dg-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
@@ -27,39 +27,39 @@ import Layout from '../../layouts/Layout.astro';
         { icon:'brush',        title:'Diseño Editorial',  desc:'Catálogos, brochures y piezas impresas con acabado premium.' },
         { icon:'format_paint', title:'Branding Digital',  desc:'Assets listos para redes, ads y marketing digital.' },
       ].map((f, i) => (
-        <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #2A2A2A;' : ''}`}>
-          <span class="material-symbols-outlined" style="font-size:32px; color:#AAFF00; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#F0F0F0; margin-bottom:8px;">{f.title}</h3>
-          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#888; line-height:1.5;">{f.desc}</p>
+        <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
+          <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
+          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <section style="background:#111111; padding:80px 24px; border-bottom:2px solid #2A2A2A;">
+  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto;">
       <span class="brut-section-label" style="margin-bottom:8px;">[02] / Planes</span>
-      <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#F0F0F0; margin-bottom:48px;">
-        Paquetes de diseño <span style="color:#AAFF00;">a tu medida</span>
+      <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:48px;">
+        Paquetes de diseño <span style="color:#0063DA;">a tu medida</span>
       </h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:2px; background:#2A2A2A; border:2px solid #2A2A2A;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:2px; background:#0063DA; border:2px solid #0063DA;">
         {[
           { badge:'',            name:'Brand Starter',  price:'$3,500',  features:['Logo primario + variantes','Paleta de colores','Tipografías corporativas','Manual básico de marca'] },
           { badge:'RECOMENDADO', name:'Brand Pro',      price:'$7,000',  features:['Todo de Brand Starter','Papelería corporativa','Plantillas RRSS','Manual de marca completo'] },
           { badge:'',            name:'Brand Full',     price:'$12,000', features:['Todo de Brand Pro','Motion graphics','Pack de iconos custom','Soporte 6 meses'] },
           { badge:'',            name:'Enterprise',     price:'A consultar', features:['Rebranding completo','Sistema de diseño digital','Guía de implementación','Formación del equipo'] },
         ].map(p => (
-          <div class="brut-reveal" style={p.badge ? 'background:#AAFF00; position:relative;' : 'background:#111111; position:relative;'}>
-            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#FF3C00; padding:6px; text-align:center;">
+          <div class="brut-reveal" style={p.badge ? 'background:#0063DA; position:relative;' : 'background:#f1f1f1; position:relative;'}>
+            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#0063DA; padding:6px; text-align:center;">
               <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#fff;">{p.badge}</span>
             </div>}
             <div style={`padding:${p.badge ? '52px 28px 28px' : '28px'}; height:100%; display:flex; flex-direction:column;`}>
-              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#0A0A0A' : '#F0F0F0'};`}>{p.name}</h3>
-              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#1A2600' : '#AAFF00'};`}>{p.price}</div>
+              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#f1f1f1' : '#111111'};`}>{p.name}</h3>
+              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#f1f1f1' : '#0063DA'};`}>{p.price}</div>
               <ul style="list-style:none; padding:0; margin:0 0 28px; flex-grow:1; display:flex; flex-direction:column; gap:10px;">
                 {p.features.map(f => (
-                  <li style={`display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? '#1A2600' : '#888'};`}>
-                    <span style={`color:${p.badge ? '#0A0A0A' : '#AAFF00'}; flex-shrink:0;`}>✓</span>{f}
+                  <li style={`display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? '#f1f1f1' : '#555555'};`}>
+                    <span style={`color:${p.badge ? '#f1f1f1' : '#0063DA'}; flex-shrink:0;`}>✓</span>{f}
                   </li>
                 ))}
               </ul>
