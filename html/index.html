@@ -60,16 +60,25 @@ img { filter:contrast(1.05) saturate(0.85); border-radius:0 !important; }
 <body>
 
 <!-- HEADER -->
-<header id="site-header" style="position:sticky;top:0;z-index:50;">
+<header id="site-header" style="position:sticky;top:0;z-index:50;background:#f1f1f1;">
   <nav style="display:flex;justify-content:space-between;align-items:center;padding:0 24px;max-width:1280px;margin:0 auto;height:80px;">
-    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#0063DA;text-decoration:none;">Loom.</a>
+    
+    <!-- Logo enlazado al inicio (sin texto) -->
+    <a href="index.html" style="display:inline-flex;align-items:center;text-decoration:none;">
+      <img src="/public/img/LOGOTIPO.png" alt="Loom Logo" style="max-height:40px;width:auto;display:block;" />
+    </a>
+
+    <!-- Menú de navegación -->
     <div style="display:flex;align-items:center;gap:32px;">
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="index.html#servicios">Servicios</a>
       <a href="contacto.html">Contacto</a>
     </div>
+
+    <!-- Botón CTA -->
     <a href="contacto.html" class="brut-btn">Contáctanos</a>
+
   </nav>
 </header>
 
@@ -262,7 +271,7 @@ img { filter:contrast(1.05) saturate(0.85); border-radius:0 !important; }
       <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
       <div style="display:flex;flex-direction:column;align-items:center;">
         <!-- Cambia "ruta/a/tu-logo.png" por la ruta de tu archivo de imagen del logo -->
-        <img src="/img/LOGOTIPO.png" alt="Loom Logo" style="max-height:45px;width:auto;margin-bottom:16px;display:block;" />
+        <img src="/public/img/LOGOTIPO.png" alt="Loom Logo" style="max-height:45px;width:auto;margin-bottom:16px;display:block;" />
         <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;line-height:1.6;margin:0;max-width:320px;">
           Loom ofrece soluciones de marketing digital completas y personalizadas para empresas de todos los tamaños.
         </p>
