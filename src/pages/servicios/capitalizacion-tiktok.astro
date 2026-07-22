@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout title="Capitalización de TikTok | Loom" currentPage="servicios">
+
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
+    <div style="max-width:1280px; margin:0 auto;">
+      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 12]</span>
+      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
+        CAPITALIZACIÓN<br/><span style="color:#0063DA;">DE TIKTOK</span>
+      </h1>
+      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
+        Educamos a nuestros aliados en cómo capitalizar TikTok en su negocio o marca, aprovechando el formato nativo de la plataforma para generar comunidad y ventas.
+      </p>
+      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"
+          alt="Capitalización de TikTok"
+          style="width:100%; display:block;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section style="background:#f1f1f1; border-bottom:2px solid #0063DA;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr);" class="feat-grid">
+      <style>.feat-grid{grid-template-columns:1fr!important} @media(min-width:768px){.feat-grid{grid-template-columns:repeat(3,1fr)!important}}</style>
+      {[
+        { icon:'music_note',    title:'Formatos Nativos',      desc:'Aprovechamos las tendencias y los formatos propios de la plataforma.' },
+        { icon:'school',        title:'Capacitación',          desc:'Educamos a tu equipo para crear contenido que funcione en TikTok.' },
+        { icon:'rocket_launch', title:'Crecimiento Orgánico',  desc:'Estrategias para ganar alcance y comunidad más allá de la pauta paga.' },
+      ].map((f, i) => (
+        <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
+          <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
+          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:#f1f1f1; padding:64px 24px; border-bottom:2px solid #0063DA;">
+    <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px; border:2px solid #0063DA; padding:48px; box-shadow:5px 5px 0 #0063DA;">
+      <div>
+        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(28px,4vw,48px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:8px;">
+          ¿Listo para capitalizar TikTok?
+        </h2>
+        <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555;">Contáctanos y platiquemos sobre tu proyecto.</p>
+      </div>
+      <a href="/contacto" class="brut-btn" style="white-space:nowrap;">HABLAR CON UN EXPERTO →</a>
+    </div>
+  </section>
+
+</Layout>
