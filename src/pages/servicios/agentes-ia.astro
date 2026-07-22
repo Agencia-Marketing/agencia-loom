@@ -1,20 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 ---
-<Layout title="Agentes de IA | Plantilla 2" currentPage="servicios">
+<Layout title="Agentes de IA | Loom" currentPage="servicios">
 
   <!-- HERO -->
-  <section style="background:#0A0A0A; padding:100px 24px 80px; border-bottom:4px solid #FF3C00; position:relative; overflow:hidden;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#FF3C00;"></div>
+  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
     <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#FF3C00; display:block; margin-bottom:16px;">[SERVICIO / 02]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#F0F0F0; margin-bottom:24px;">
-        AGENTES<br/><span style="color:#FF3C00;">DE IA</span>
+      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 02]</span>
+      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
+        AGENTES<br/><span style="color:#0063DA;">DE IA</span>
       </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#888; line-height:1.65; max-width:600px; margin-bottom:48px;">
+      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
         Implementamos agentes inteligentes para automatizar tus procesos de atención al cliente y aumentar tus ventas las 24 horas, los 7 días de la semana.
       </p>
-      <div style="max-width:900px; border:2px solid #3D3D3D; box-shadow:6px 6px 0 #FF3C00; overflow:hidden;">
+      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
         <img
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"
           alt="Agentes IA"
@@ -25,55 +25,55 @@ import Layout from '../../layouts/Layout.astro';
   </section>
 
   <!-- FEATURES -->
-  <section style="background:#191919; border-bottom:2px solid #2A2A2A; border-top:4px solid #FF3C00;">
+  <section style="background:#f1f1f1; border-bottom:2px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr);" class="feat-grid-ia">
       <style>.feat-grid-ia{grid-template-columns:1fr!important} @media(min-width:768px){.feat-grid-ia{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
-        { icon:'schedule',      title:'Disponibilidad 24/7',   desc:'Tu negocio nunca cierra. Atención automatizada sin interrupciones.' },
-        { icon:'psychology',    title:'IA Avanzada',            desc:'Modelos de lenguaje de última generación para respuestas naturales.' },
-        { icon:'bolt',          title:'Integración Rápida',     desc:'Compatible con WhatsApp, web, Instagram y más plataformas.' },
+        { icon:'schedule',     title:'Disponibilidad 24/7',   desc:'Tu negocio nunca cierra. Atención automatizada sin interrupciones.' },
+        { icon:'psychology',   title:'IA Avanzada',            desc:'Modelos de lenguaje de última generación para respuestas naturales.' },
+        { icon:'bolt',         title:'Integración Rápida',     desc:'Compatible con WhatsApp, web, Instagram y más plataformas.' },
       ].map((f, i) => (
-        <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #2A2A2A;' : ''}`}>
-          <span class="material-symbols-outlined" style="font-size:32px; color:#FF3C00; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#F0F0F0; margin-bottom:8px;">{f.title}</h3>
-          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#888; line-height:1.5;">{f.desc}</p>
+        <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
+          <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
+          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
   <!-- PLANES -->
-  <section style="background:#111111; padding:80px 24px; border-bottom:2px solid #2A2A2A;">
+  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto;">
-      <div style="padding-bottom:32px; border-bottom:2px solid #3D3D3D; margin-bottom:48px;">
-        <span class="brut-section-label" style="margin-bottom:8px; color:#FF3C00;">[02] / Nuestros planes</span>
-        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#F0F0F0;">
-          Automatización que<br/><span style="color:#FF3C00;">escala contigo</span>
+      <div style="padding-bottom:32px; border-bottom:2px solid #0063DA; margin-bottom:48px;">
+        <span class="brut-section-label" style="margin-bottom:8px; color:#0063DA;">[02] / Nuestros planes</span>
+        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111;">
+          Automatización que<br/><span style="color:#0063DA;">escala contigo</span>
         </h2>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; background:#2A2A2A; border:2px solid #2A2A2A;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; background:#f1f1f1;">
         {[
-          { badge:'',            name:'Agente Básico',     price:'$2,900',   features:['Chatbot FAQ automatizado','Integración web','Respuestas predefinidas','Soporte 30 días'] },
+          { badge:'',             name:'Agente Básico',     price:'$2,900',   features:['Chatbot FAQ automatizado','Integración web','Respuestas predefinidas','Soporte 30 días'] },
           { badge:'RECOMENDADO', name:'Agente Avanzado',   price:'$5,800',   features:['IA generativa integrada','Multi-canal (web + WhatsApp)','Aprendizaje continuo','Dashboard analytics'] },
-          { badge:'',            name:'Agente Enterprise', price:'$11,600',  features:['Agentes múltiples',  'CRM integrado','Automatización de ventas','SLA garantizado 99.9%'] },
+          { badge:'',             name:'Agente Enterprise', price:'$11,600',  features:['Agentes múltiples',  'CRM integrado','Automatización de ventas','SLA garantizado 99.9%'] },
         ].map(p => (
-          <div class="brut-reveal" style={p.badge ? 'background:#FF3C00; position:relative;' : 'background:#111111; position:relative;'}>
-            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#0A0A0A; padding:6px 12px; text-align:center; border-bottom:2px solid #CC3000;">
-              <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#FF3C00;">{p.badge}</span>
+          <div class="brut-reveal" style={p.badge ? 'background:#0063DA; border:2px solid #0063DA; box-shadow:5px 5px 0 #111111; position:relative;' : 'background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; position:relative;'}>
+            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#111111; padding:6px 12px; text-align:center;">
+              <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#0063DA;">{p.badge}</span>
             </div>}
             <div style={`padding:${p.badge ? '52px 28px 28px' : '28px'}; display:flex; flex-direction:column; height:100%;`}>
-              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#fff' : '#F0F0F0'};`}>{p.name}</h3>
-              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:36px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#fff' : '#FF3C00'};`}>{p.price}</div>
+              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#f1f1f1' : '#111111'};`}>{p.name}</h3>
+              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:36px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#f1f1f1' : '#0063DA'};`}>{p.price}</div>
               <ul style="list-style:none; padding:0; margin:0 0 28px; flex-grow:1; display:flex; flex-direction:column; gap:10px;">
                 {p.features.map(f => (
-                  <li style={`display:flex; align-items:start; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? 'rgba(255,255,255,0.85)' : '#888'};`}>
-                    <span style={`color:${p.badge ? '#fff' : '#FF3C00'}; flex-shrink:0;`}>✓</span>{f}
+                  <li style={`display:flex; align-items:start; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? '#f1f1f1' : '#555555'};`}>
+                    <span style={`color:${p.badge ? '#f1f1f1' : '#0063DA'}; flex-shrink:0; font-weight:bold;`}>✓</span>{f}
                   </li>
                 ))}
               </ul>
-              <a href="/contacto" style={`display:inline-flex; align-items:center; justify-content:center; padding:14px 24px; border:2px solid ${p.badge ? '#fff' : '#FF3C00'}; color:${p.badge ? '#fff' : '#FF3C00'}; background:transparent; font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; box-shadow:3px 3px 0 ${p.badge ? 'rgba(0,0,0,0.3)' : '#CC3000'}; transition:all 150ms ease-out;`}
-                onmouseover={`this.style.background='${p.badge ? '#fff' : '#FF3C00'}'; this.style.color='${p.badge ? '#FF3C00' : '#fff'}'`}
-                onmouseout={`this.style.background='transparent'; this.style.color='${p.badge ? '#fff' : '#FF3C00'}'`}>
+              <a href="/contacto" style={`display:inline-flex; align-items:center; justify-content:center; padding:14px 24px; border:2px solid ${p.badge ? '#f1f1f1' : '#0063DA'}; color:${p.badge ? '#f1f1f1' : '#0063DA'}; background:transparent; font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; box-shadow:3px 3px 0 ${p.badge ? '#111111' : '#0063DA'}; transition:all 150ms ease-out;`}
+                onmouseover={`this.style.background='${p.badge ? '#f1f1f1' : '#0063DA'}'; this.style.color='${p.badge ? '#0063DA' : '#f1f1f1'}'`}
+                onmouseout={`this.style.background='transparent'; this.style.color='${p.badge ? '#f1f1f1' : '#0063DA'}'`}>
                 CONTRATAR →
               </a>
             </div>

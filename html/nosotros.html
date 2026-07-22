@@ -3,141 +3,147 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nosotros | Plantilla 2</title>
+<title>Nosotros | Loom</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{border-radius:0!important;}
-body{font-family:'Barlow',sans-serif;background:#0A0A0A;color:#F0F0F0;-webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:#F0F0F0;}
-.brut-btn{display:inline-flex;align-items:center;gap:8px;border:2px solid #AAFF00;background:transparent;color:#AAFF00;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 28px;cursor:pointer;box-shadow:3px 3px 0 #AAFF00;transition:all 150ms ease-out;text-decoration:none;}
-.brut-btn:hover{background:#AAFF00;color:#0A0A0A;box-shadow:5px 5px 0 #88CC00;transform:translate(-1px,-1px);}
-.brut-btn-dark{border-color:#0A0A0A;color:#0A0A0A;box-shadow:3px 3px 0 #0A0A0A;}
-.brut-btn-dark:hover{background:#0A0A0A;color:#AAFF00;}
-.brut-section-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#AAFF00;display:block;}
+body{font-family:'Barlow',sans-serif;background:#f1f1f1;color:#111111;-webkit-font-smoothing:antialiased;margin:0;}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:#111111;}
+.brut-btn{display:inline-flex;align-items:center;gap:8px;border:2px solid #0063DA;background:transparent;color:#0063DA;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 28px;cursor:pointer;box-shadow:3px 3px 0 #0063DA;transition:all 150ms ease-out;text-decoration:none;}
+.brut-btn:hover{background:#0063DA;color:#f1f1f1;box-shadow:5px 5px 0 #111111;transform:translate(-1px,-1px);}
+.brut-btn-dark{border-color:#111111;color:#111111;box-shadow:3px 3px 0 #111111;}
+.brut-btn-dark:hover{background:#0063DA;color:#f1f1f1;border-color:#0063DA;}
+.brut-section-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#0063DA;display:block;}
 .brut-reveal{opacity:0;transform:translateY(20px);transition:opacity 250ms ease-out,transform 250ms ease-out;}
 .brut-reveal.visible{opacity:1;transform:none;}
-header{background:#0A0A0A!important;border-bottom:2px solid transparent!important;transition:border-color 200ms;}
-header.scrolled{border-bottom-color:#AAFF00!important;}
-nav a{font-family:'JetBrains Mono',monospace!important;font-size:12px!important;font-weight:700!important;text-transform:uppercase!important;letter-spacing:0.08em!important;color:#888!important;text-decoration:none;transition:color 150ms;}
-nav a:hover{color:#AAFF00!important;}
-section{border-bottom:2px solid #2A2A2A;}
+header{background:#f1f1f1!important;border-bottom:2px solid transparent!important;transition:border-color 200ms;}
+header.scrolled{border-bottom-color:#0063DA!important;}
+nav a{font-family:'JetBrains Mono',monospace!important;font-size:12px!important;font-weight:700!important;text-transform:uppercase!important;letter-spacing:0.08em!important;color:#555555!important;text-decoration:none;transition:color 150ms;}
+nav a:hover{color:#0063DA!important;}
+section{border-bottom:2px solid #0063DA;background:#f1f1f1;}
 img{filter:contrast(1.05) saturate(0.85);border-radius:0!important;}
+::selection{background:#0063DA;color:#f1f1f1;}
+::-webkit-scrollbar{width:6px;} ::-webkit-scrollbar-track{background:#f1f1f1;} ::-webkit-scrollbar-thumb{background:#0063DA;}
 </style>
 </head>
 <body>
 <header id="site-header" style="position:sticky;top:0;z-index:50;">
   <nav style="display:flex;justify-content:space-between;align-items:center;padding:0 24px;max-width:1280px;margin:0 auto;height:80px;">
-    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;text-decoration:none;">PLANTILLA 2.</a>
+    <a href="index.html" style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#0063DA;text-decoration:none;">Loom.</a>
     <div style="display:flex;align-items:center;gap:32px;">
-      <a href="index.html">Inicio</a><a href="nosotros.html" style="color:#AAFF00!important;">Nosotros</a>
-      <a href="index.html#servicios">Servicios</a><a href="contacto.html">Contacto</a>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html" style="color:#0063DA!important;">Nosotros</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="contacto.html">Contacto</a>
     </div>
     <a href="contacto.html" class="brut-btn">Contáctanos</a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section style="background:#AAFF00;padding:100px 24px 80px;border-bottom:4px solid #0A0A0A;">
+<section style="background:#f1f1f1;padding:100px 24px 80px;border-bottom:4px solid #0063DA;">
   <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
     <div class="brut-reveal">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#1A2600;display:block;margin-bottom:20px;">// Sobre nosotros</span>
-      <h1 style="font-size:clamp(44px,6vw,80px);line-height:0.95;color:#0A0A0A;margin-bottom:24px;">IMPULSAMOS EL CRECIMIENTO<br/><span style="color:#1A2600;">DE TU MARCA</span></h1>
-      <p style="font-family:'Barlow',sans-serif;font-size:17px;color:#1A2600;line-height:1.65;max-width:480px;margin-bottom:36px;">Nuestro compromiso es ir más allá de tus metas, forjando alianzas duraderas cimentadas en la transparencia.</p>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#0063DA;display:block;margin-bottom:20px;">// Sobre nosotros</span>
+      <h1 style="font-size:clamp(44px,6vw,80px);line-height:0.95;color:#111111;margin-bottom:24px;">IMPULSAMOS EL CRECIMIENTO<br/><span style="color:#0063DA;">DE TU MARCA</span></h1>
+      <p style="font-family:'Barlow',sans-serif;font-size:17px;color:#555555;line-height:1.65;max-width:480px;margin-bottom:36px;">Nos apasiona el tejer estrategias digitales únicas que conecten marcas y audiencias a través de creatividad, basado en data e innovación, creando resultados medibles que impacten positivamente en tu negocio.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
-        <button class="brut-btn-dark brut-btn">Nuestra Historia</button>
-        <a href="index.html#servicios" class="brut-btn-dark brut-btn">Ver Servicios</a>
+        <button class="brut-btn">Nuestra Historia</button>
+        <a href="index.html#servicios" class="brut-btn">Ver Servicios</a>
       </div>
     </div>
     <div class="brut-reveal" style="position:relative;">
-      <div style="position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:2px solid #0A0A0A;z-index:0;"></div>
-      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQhPEMMIcG4hW_a1hwRUCZbB6U011aYxBNG6rY_Wlm0kLNNxgNBuaZQK2W43MWAdxsIFeJYhACgabnvUUnSsyWL0-nrqiRYX2Ui3MSA7xgEzpBZHaT4sd-QmisarvyAZlU2UxGFMFBb0PDkw8MM7YodinZHkhpF331gfHKMEFT9A2srJO4QsyiX8AnamTwk_Nosqrz92z1UgUOYnS-ROZWMOxxq6yoWgqVdA6u-bhcgrsZ9lnBT24GjhIJG-iVejSSjbOq7wFHksbI" alt="Equipo" style="width:100%;position:relative;z-index:1;border:2px solid #0A0A0A;display:block;" />
+      <div style="position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:2px solid #0063DA;z-index:0;"></div>
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQhPEMMIcG4hW_a1hwRUCZbB6U011aYxBNG6rY_Wlm0kLNNxgNBuaZQK2W43MWAdxsIFeJYhACgabnvUUnSsyWL0-nrqiRYX2Ui3MSA7xgEzpBZHaT4sd-QmisarvyAZlU2UxGFMFBb0PDkw8MM7YodinZHkhpF331gfHKMEFT9A2srJO4QsyiX8AnamTwk_Nosqrz92z1UgUOYnS-ROZWMOxxq6yoWgqVdA6u-bhcgrsZ9lnBT24GjhIJG-iVejSSjbOq7wFHksbI" alt="Equipo" style="width:100%;position:relative;z-index:1;border:2px solid #0063DA;display:block;" />
     </div>
   </div>
 </section>
 
 <!-- STATS -->
-<section style="background:#0A0A0A;padding:0;">
+<section style="background:#f1f1f1;padding:0;">
   <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);">
-    <div style="padding:48px 32px;text-align:center;border-right:2px solid #2A2A2A;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#AAFF00;line-height:1;margin-bottom:8px;">500+</div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;">Proyectos</div>
+    <div style="padding:48px 32px;text-align:center;border-right:2px solid #0063DA;">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#0063DA;line-height:1;margin-bottom:8px;">500+</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555555;">Proyectos</div>
     </div>
-    <div style="padding:48px 32px;text-align:center;border-right:2px solid #2A2A2A;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#AAFF00;line-height:1;margin-bottom:8px;">98%</div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;">Retención</div>
+    <div style="padding:48px 32px;text-align:center;border-right:2px solid #0063DA;">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#0063DA;line-height:1;margin-bottom:8px;">98%</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555555;">Retención</div>
     </div>
-    <div style="padding:48px 32px;text-align:center;border-right:2px solid #2A2A2A;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#AAFF00;line-height:1;margin-bottom:8px;">24/7</div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;">Soporte</div>
+    <div style="padding:48px 32px;text-align:center;border-right:2px solid #0063DA;">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#0063DA;line-height:1;margin-bottom:8px;">24/7</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555555;">Soporte</div>
     </div>
     <div style="padding:48px 32px;text-align:center;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#AAFF00;line-height:1;margin-bottom:8px;">15</div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555;">Países</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:#0063DA;line-height:1;margin-bottom:8px;">15</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#555555;">Países</div>
     </div>
   </div>
 </section>
 
 <!-- QUIÉNES SOMOS -->
-<section style="background:#111111;padding:80px 24px;">
+<section style="background:#f1f1f1;padding:80px 24px;">
   <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start;">
     <div class="brut-reveal" style="position:relative;">
-      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwKFIrrQy6l4HevDOlZIakGLDpej8j1gVs_wOQVLKp8w_lk2pi7YnE68Oq-hxvmfYm28agDkMRbfQJ3Q7jCgPVoIKgUdrtba4HL6PPxLTgvCLbpunBVDd_c3BvK_Em21m4HiCEjARo-2WSyFqw7IG0v-CpFOhUXlwNVkMgs42cs2w1XnaIs0yQHu_xYsObjOOjyGKoaNORKPRpfZPDwqIU0k8vV6V0yB7wgFNWwk2PiKq8k49uEFvAu7hONvLa6KlVkxayUGHO" alt="Liderazgo" style="width:100%;border:2px solid #3D3D3D;display:block;" />
-      <div style="position:absolute;bottom:-20px;right:-20px;background:#AAFF00;border:2px solid #88CC00;box-shadow:4px 4px 0 #0A0A0A;padding:24px;max-width:220px;">
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:#0A0A0A;line-height:1;">10+</div>
-        <div style="font-family:'Barlow',sans-serif;font-size:14px;color:#1A2600;line-height:1.4;">Años transformando marcas digitales</div>
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwKFIrrQy6l4HevDOlZIakGLDpej8j1gVs_wOQVLKp8w_lk2pi7YnE68Oq-hxvmfYm28agDkMRbfQJ3Q7jCgPVoIKgUdrtba4HL6PPxLTgvCLbpunBVDd_c3BvK_Em21m4HiCEjARo-2WSyFqw7IG0v-CpFOhUXlwNVkMgs42cs2w1XnaIs0yQHu_xYsObjOOjyGKoaNORKPRpfZPDwqIU0k8vV6V0yB7wgFNWwk2PiKq8k49uEFvAu7hONvLa6KlVkxayUGHO" alt="Liderazgo" style="width:100%;border:2px solid #0063DA;display:block;" />
+      <div style="position:absolute;bottom:-20px;right:-20px;background:#0063DA;border:2px solid #0063DA;box-shadow:4px 4px 0 #111111;padding:24px;max-width:220px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:#f1f1f1;line-height:1;">10+</div>
+        <div style="font-family:'Barlow',sans-serif;font-size:14px;color:#f1f1f1;line-height:1.4;">Años transformando marcas digitales</div>
       </div>
     </div>
     <div class="brut-reveal">
       <span class="brut-section-label" style="margin-bottom:16px;">[01] / Nuestra esencia</span>
-      <h2 style="font-size:clamp(32px,4vw,48px);margin-bottom:24px;">El motor que impulsa<br/><span style="color:#AAFF00;">nuestra agencia</span></h2>
-      <div style="border-left:4px solid #AAFF00;padding-left:24px;margin-bottom:32px;">
-        <p style="font-family:'Barlow',sans-serif;font-size:17px;color:#888;line-height:1.65;">Vivimos para detonar el máximo rendimiento de tu negocio en internet. No somos solo una agencia, somos tu socio estratégico.</p>
+      <h2 style="font-size:clamp(32px,4vw,48px);margin-bottom:24px;">Somos el telar digital que<br/><span style="color:#0063DA;">convierte ideas en resultados</span></h2>
+      <div style="border-left:4px solid #0063DA;padding-left:24px;margin-bottom:32px;">
+        <p style="font-family:'Barlow',sans-serif;font-size:17px;color:#555555;line-height:1.65;">Loom significa telar en inglés. El telar simboliza la capacidad de unir hilos diferentes (estrategia, tecnología, diseño, datos) para crear una tela única = una experiencia digital integrada con impacto positivo en tu negocio.</p>
       </div>
-      <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#555;line-height:1.65;margin-bottom:36px;">Nuestra metodología combina datos rigurosos con una creatividad desbordante para asegurar que tu marca no solo sea vista, sino recordada.</p>
+      <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#555555;line-height:1.65;margin-bottom:36px;">Estamos convencidos que cada marca o negocio tiene una historia única por contar, un hilo que, cuando se teje con creatividad, tecnología e innovación, puede convertirse en una experiencia inolvidable, nosotros te ayudamos a hacerlo realidad.</p>
       <a href="contacto.html" class="brut-btn">Hablemos de tu proyecto →</a>
     </div>
   </div>
 </section>
 
 <!-- EQUIPO -->
-<section style="background:#0A0A0A;padding:80px 24px;">
+<section style="background:#f1f1f1;padding:80px 24px;">
   <div style="max-width:1280px;margin:0 auto;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:24px;border-bottom:2px solid #2A2A2A;margin-bottom:48px;flex-wrap:wrap;gap:24px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:24px;border-bottom:2px solid #0063DA;margin-bottom:24px;flex-wrap:wrap;gap:24px;">
       <div>
         <span class="brut-section-label" style="margin-bottom:8px;">[02] / El equipo</span>
-        <h2 style="font-size:clamp(32px,4vw,48px);">Conoce a nuestros<br/><span style="color:#AAFF00;">expertos</span></h2>
+        <h2 style="font-size:clamp(32px,4vw,48px);">Nuestro Equipo<br/><span style="color:#0063DA;"> de Innovadores</span></h2>
       </div>
       <a href="contacto.html" class="brut-btn">Agenda una cita →</a>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#2A2A2A;border:2px solid #2A2A2A;">
-      <div style="background:#111111;overflow:hidden;">
+    <p style="font-family:'Barlow',sans-serif;font-size:16px;color:#555555;line-height:1.65;margin-bottom:36px;">En Loom trabajamos como un telar colectivo, donde cada colaborador, cliente y socio aporta un hilo indispensable. Nuestro equipo está formado por innovadores apasionados siempre en la búsqueda de nuevas estrategias y tecnologías que mantendrán a tu negocio por delante de la competencia.</p>
+    
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:#f1f1f1;">
+      <div style="background:#f1f1f1;border:2px solid #0063DA;overflow:hidden;box-shadow:4px 4px 0 #0063DA;">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI" alt="Alex Rivera" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:contrast(1.05) saturate(0.85) grayscale(100%);transition:filter 250ms;" onmouseover="this.style.filter='contrast(1.05) saturate(0.85) grayscale(0%)'" onmouseout="this.style.filter='contrast(1.05) saturate(0.85) grayscale(100%)'" />
-        <div style="padding:20px;border-top:2px solid #2A2A2A;">
+        <div style="padding:20px;border-top:2px solid #0063DA;">
           <h3 style="font-size:22px;margin-bottom:4px;">Alex Rivera</h3>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#AAFF00;">Director Creativo</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0063DA;">Director Creativo</span>
         </div>
       </div>
-      <div style="background:#111111;overflow:hidden;">
+      <div style="background:#f1f1f1;border:2px solid #0063DA;overflow:hidden;box-shadow:4px 4px 0 #0063DA;">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI" alt="Elena Gómez" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:contrast(1.05) saturate(0.85) grayscale(100%);transition:filter 250ms;" onmouseover="this.style.filter='contrast(1.05) saturate(0.85) grayscale(0%)'" onmouseout="this.style.filter='contrast(1.05) saturate(0.85) grayscale(100%)'" />
-        <div style="padding:20px;border-top:2px solid #2A2A2A;">
+        <div style="padding:20px;border-top:2px solid #0063DA;">
           <h3 style="font-size:22px;margin-bottom:4px;">Elena Gómez</h3>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#AAFF00;">Estratega SEO</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0063DA;">Estratega SEO</span>
         </div>
       </div>
-      <div style="background:#111111;overflow:hidden;">
+      <div style="background:#f1f1f1;border:2px solid #0063DA;overflow:hidden;box-shadow:4px 4px 0 #0063DA;">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI" alt="Marc Costa" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:contrast(1.05) saturate(0.85) grayscale(100%);transition:filter 250ms;" onmouseover="this.style.filter='contrast(1.05) saturate(0.85) grayscale(0%)'" onmouseout="this.style.filter='contrast(1.05) saturate(0.85) grayscale(100%)'" />
-        <div style="padding:20px;border-top:2px solid #2A2A2A;">
+        <div style="padding:20px;border-top:2px solid #0063DA;">
           <h3 style="font-size:22px;margin-bottom:4px;">Marc Costa</h3>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#AAFF00;">Lead Developer</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0063DA;">Lead Developer</span>
         </div>
       </div>
-      <div style="background:#111111;overflow:hidden;">
+      <div style="background:#f1f1f1;border:2px solid #0063DA;overflow:hidden;box-shadow:4px 4px 0 #0063DA;">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI" alt="Sofía Méndez" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:contrast(1.05) saturate(0.85) grayscale(100%);transition:filter 250ms;" onmouseover="this.style.filter='contrast(1.05) saturate(0.85) grayscale(0%)'" onmouseout="this.style.filter='contrast(1.05) saturate(0.85) grayscale(100%)'" />
-        <div style="padding:20px;border-top:2px solid #2A2A2A;">
+        <div style="padding:20px;border-top:2px solid #0063DA;">
           <h3 style="font-size:22px;margin-bottom:4px;">Sofía Méndez</h3>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#AAFF00;">Growth Manager</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0063DA;">Growth Manager</span>
         </div>
       </div>
     </div>
@@ -145,43 +151,43 @@ img{filter:contrast(1.05) saturate(0.85);border-radius:0!important;}
 </section>
 
 <!-- FOOTER -->
-<footer style="background:#0A0A0A;border-top:4px solid #AAFF00;padding:80px 24px 40px;">
+<footer style="background:#f1f1f1;border-top:4px solid #0063DA;padding:80px 24px 40px;">
   <div style="max-width:1280px;margin:0 auto;">
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-bottom:48px;">
       <div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#AAFF00;margin-bottom:16px;">PLANTILLA 2.</div>
-        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;line-height:1.6;">Soluciones digitales de alto impacto.</p>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#0063DA;margin-bottom:16px;">Loom.</div>
+        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;line-height:1.6;">Soluciones digitales de alto impacto.</p>
       </div>
       <div>
         <div class="brut-section-label" style="margin-bottom:16px;">// Contacto</div>
-        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;line-height:1.8;">+34 639 494 000<br/>contacto@plantilla2.com<br/>Madrid, España</p>
+        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;line-height:1.8;">55 2701 2954<br/>Lunes a viernes de 08:00 a.m. a 06:00 p.m</p>
       </div>
       <div>
         <div class="brut-section-label" style="margin-bottom:16px;">// Páginas</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="index.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Inicio</a></li>
-          <li><a href="nosotros.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Nosotros</a></li>
-          <li><a href="contacto.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;" onmouseover="this.style.color='#AAFF00'" onmouseout="this.style.color='#888'">Contacto</a></li>
+          <li><a href="index.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Inicio</a></li>
+          <li><a href="nosotros.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Nosotros</a></li>
+          <li><a href="contacto.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Contacto</a></li>
         </ul>
       </div>
       <div>
         <div class="brut-section-label" style="margin-bottom:16px;">// Links</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;">Blog</a></li>
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;">FAQ</a></li>
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#888;text-decoration:none;">Privacidad</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Blog</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">FAQ</a></li>
+          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Privacidad</a></li>
         </ul>
       </div>
     </div>
-    <div style="padding-top:24px;border-top:2px solid #2A2A2A;">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin:0;">&copy; 2026 PLANTILLA 2 &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+    <div style="padding-top:24px;border-top:2px solid #0063DA;">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555555;margin:0;">&copy; 2026 Loom &mdash; TODOS LOS DERECHOS RESERVADOS</p>
     </div>
   </div>
 </footer>
 
 <script>
 const header = document.getElementById('site-header');
-window.addEventListener('scroll',()=>{ if(window.scrollY>40){header.classList.add('scrolled');header.style.borderBottomColor='#AAFF00';}else{header.classList.remove('scrolled');header.style.borderBottomColor='transparent';} },{passive:true});
+window.addEventListener('scroll',()=>{ if(window.scrollY>40){header.classList.add('scrolled');header.style.borderBottomColor='#0063DA';}else{header.classList.remove('scrolled');header.style.borderBottomColor='transparent';} },{passive:true});
 const obs = new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}}),{threshold:0.1});
 document.querySelectorAll('.brut-reveal').forEach(el=>obs.observe(el));
 </script>
