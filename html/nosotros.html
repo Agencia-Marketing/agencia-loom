@@ -153,35 +153,50 @@ img{filter:contrast(1.05) saturate(0.85);border-radius:0!important;}
 <!-- FOOTER -->
 <footer style="background:#f1f1f1;border-top:4px solid #0063DA;padding:80px 24px 40px;">
   <div style="max-width:1280px;margin:0 auto;">
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-bottom:48px;">
-      <div>
-        <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#0063DA;margin-bottom:16px;">Loom.</div>
-        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;line-height:1.6;">Soluciones digitales de alto impacto.</p>
+    
+    <!-- GRID DE 3 COLUMNAS CENTRADAS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:48px;margin-bottom:64px;text-align:center;">
+      
+      <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <!-- Cambia "ruta/a/tu-logo.png" por la ruta de tu archivo de imagen del logo -->
+        <img src="/public/img/LOGOTIPO.png" alt="Loom Logo" style="max-height:45px;width:auto;margin-bottom:16px;display:block;" />
+        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;line-height:1.6;margin:0;max-width:320px;">
+          Loom ofrece soluciones de marketing digital completas y personalizadas para empresas de todos los tamaños.
+        </p>
       </div>
-      <div>
-        <div class="brut-section-label" style="margin-bottom:16px;">// Contacto</div>
-        <p style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;line-height:1.8;">55 2701 2954<br/>Lunes a viernes de 08:00 a.m. a 06:00 p.m</p>
-      </div>
-      <div>
-        <div class="brut-section-label" style="margin-bottom:16px;">// Páginas</div>
-        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="index.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Inicio</a></li>
-          <li><a href="nosotros.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Nosotros</a></li>
-          <li><a href="contacto.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Contacto</a></li>
+
+      <!-- COLUMNA 2: CONTACTO -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="brut-section-label" style="margin-bottom:16px;color:#0063DA;">// Contacto</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <li style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;">55 2701 2954</li>
+          <li style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;">Lunes a viernes de 08:00 a.m. a 06:00 p.m</li>
         </ul>
       </div>
-      <div>
-        <div class="brut-section-label" style="margin-bottom:16px;">// Links</div>
-        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Blog</a></li>
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">FAQ</a></li>
-          <li><a href="#" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555555'">Privacidad</a></li>
+
+      <!-- COLUMNA 3: PÁGINAS -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div class="brut-section-label" style="margin-bottom:16px;color:#0063DA;">// Páginas</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;">
+          <li><a href="index.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Inicio</a></li>
+          <li><a href="nosotros.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Nosotros</a></li>
+          <li><a href="index.html#servicios" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Servicios</a></li>
+          <li><a href="contacto.html" style="font-family:'Barlow',sans-serif;font-size:15px;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Contacto</a></li>
         </ul>
       </div>
+
     </div>
-    <div style="padding-top:24px;border-top:2px solid #0063DA;">
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555555;margin:0;">&copy; 2026 Loom &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+
+    <!-- BARRA INFERIOR -->
+    <div style="padding-top:24px;border-top:2px solid #0063DA;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;margin:0;">&copy; 2026 Loom &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+      <div style="display:flex;gap:24px;">
+        <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Términos</a>
+        <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#555;text-decoration:none;" onmouseover="this.style.color='#0063DA'" onmouseout="this.style.color='#555'">Soporte</a>
+      </div>
     </div>
+
   </div>
 </footer>
 
