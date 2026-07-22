@@ -3,79 +3,130 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Embudos de Venta | Loom" currentPage="servicios">
 
-  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
-    <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 07]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
-        EMBUDOS<br/><span style="color:#0063DA;">DE VENTA</span>
-      </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
-        Transforma el tráfico de tus redes sociales en un flujo constante de clientes potenciales cualificados, operando en piloto automático 24/7.
-      </p>
-      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUu9IlokmAkV3pjZ1CQete1g3cwm7HTZZMUR63uS7Icu0PC9ycgjyJm66sXVkbaO2p5gHN9vgE_647EQ8uqvdAIC9Zu2Q_xhXgNSNT2EJexJF1FZaCxnbaz0zvvb0vTedgRzTjcsZpmLVHHPjq6IQcfh5UeFPefacm08RZL5U4wjDJ41VtgwnWAwNy7P1nF3ejeLe1lN6lyCq-1cSVjVxECEvuLtnTbxJO-7Yy8qUOOMmSY_qCdEXAT-Lq4BebnNqHcsuYC5odq53g" alt="Embudos de Venta" style="width:100%; display:block;" />
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:72px 24px 64px; border-bottom:4px solid #0063DA; border-left:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+
+      <div>
+        <span class="brut-section-label" style="display:inline-block; background:#0063DA; color:#f1f1f1; padding:4px 12px; border:2px solid #111111; box-shadow:3px 3px 0 #111111; margin-bottom:20px; font-weight:700;">
+          [ SERVICIO / 07 ]
+        </span>
+
+        <h1 style="font-size:clamp(48px,6vw,84px); line-height:0.92; margin-bottom:20px; text-transform:uppercase; font-weight:900;">
+          EMBUDOS<br/><span style="color:#0063DA;">DE VENTA</span>
+        </h1>
+
+        <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.6; max-width:540px; margin-bottom:32px;">
+          Transforma el tráfico de tus anuncios en un flujo constante de prospectos cualificados con filtros API de Facebook y automatización.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <a href="/contacto" class="brut-btn" style="background:#0063DA; color:#f1f1f1; border-color:#0063DA; box-shadow:4px 4px 0 #111111; font-size:13px; padding:16px 28px;">
+            CREAR MI EMBUDO →
+          </a>
+          <a href="#planes" class="brut-btn" style="font-size:13px; padding:16px 24px;">
+            VER DETALLES
+          </a>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top:32px; border-top:2px solid #0063DA; padding-top:20px; flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Landing Page Incluida
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> API de Conversión
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Entrega en 7-10 Días
+          </span>
+        </div>
       </div>
+
+      <div style="position:relative;">
+        <div style="border:2px solid #0063DA; background:#ffffff; box-shadow:6px 6px 0 #0063DA; padding:20px; position:relative;">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUu9IlokmAkV3pjZ1CQete1g3cwm7HTZZMUR63uS7Icu0PC9ycgjyJm66sXVkbaO2p5gHN9vgE_647EQ8uqvdAIC9Zu2Q_xhXgNSNT2EJexJF1FZaCxnbaz0zvvb0vTedgRzTjcsZpmLVHHPjq6IQcfh5UeFPefacm08RZL5U4wjDJ41VtgwnWAwNy7P1nF3ejeLe1lN6lyCq-1cSVjVxECEvuLtnTbxJO-7Yy8qUOOMmSY_qCdEXAT-Lq4BebnNqHcsuYC5odq53g"
+            alt="Embudos de Venta"
+            style="width:100%; height:auto; display:block; object-fit:contain; max-height:380px;"
+          />
+        </div>
+
+        <div style="position:absolute; bottom:-16px; left:-16px; background:#111111; color:#f1f1f1; padding:8px 16px; border:2px solid #0063DA; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; box-shadow:3px 3px 0 #0063DA;">
+          ⚙️ Conversión Automática
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
+  <!-- FEATURES -->
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="ev-feat">
       <style>.ev-feat{grid-template-columns:1fr!important} @media(min-width:768px){.ev-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
-        { icon:'filter_alt',   title:'Embudos Optimizados', desc:'Diseñados para maximizar la tasa de conversión en cada etapa.' },
-        { icon:'autorenew',    title:'Automatización Total', desc:'Secuencias de email y nurturing que trabajan por ti.' },
-        { icon:'calendar_month', title:'Citas Automáticas', desc:'Calendario integrado para cerrar ventas sin llamadas manuales.' },
+        { icon:'filter_alt',     title:'Embudos Optimizados',   desc:'Diseñados para maximizar la tasa de conversión.' },
+        { icon:'autorenew',      title:'Automatización Total',  desc:'Secuencias de email y nurturing automáticas.' },
+        { icon:'calendar_month', title:'Citas Automáticas',     desc:'Calendario integrado sin llamadas manuales.' },
       ].map((f, i) => (
         <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
           <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <h3 style="font-size:20px; margin-bottom:8px;">{f.title}</h3>
           <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <!-- Pricing destacado -->
-  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
-    <div style="max-width:1280px; margin:0 auto; display:grid; gap:48px; align-items:start;" class="ev-pricing-grid">
-      <style>.ev-pricing-grid{grid-template-columns:1fr!important} @media(min-width:768px){.ev-pricing-grid{grid-template-columns:1fr 1fr!important}}</style>
+  <!-- DETALLES Y PAQUETE -->
+  <section id="planes" style="background:#f1f1f1; padding:80px 24px;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:start;">
 
+      <!-- Presentación -->
       <div class="brut-reveal">
-        <span class="brut-section-label" style="color:#0063DA; margin-bottom:16px;">[02] / Automatiza tus ventas</span>
-        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:8px; line-height:1.0;">
-          Sistema completo<br/><span style="color:#0063DA;">de ventas automáticas</span>
-        </h2>
-        <div style="border:2px solid #0063DA; overflow:hidden; margin-top:32px;">
+        <span class="brut-section-label" style="margin-bottom:16px;">[02] / Automatiza tus ventas</span>
+        <h2 style="font-size:clamp(32px,4vw,52px); margin-bottom:16px; line-height:1.0;">Embudos de venta con <span style="color:#0063DA;">Filtro API de Facebook</span></h2>
+        <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555; line-height:1.6; margin-bottom:24px;">Captura datos de prospectos calificados y sincroniza tus conversiones directamente con la API de Facebook para optimizar el rendimiento de tus campañas.</p>
+
+        <div style="border:2px solid #0063DA; background:#ffffff; padding:24px; box-shadow:4px 4px 0 #0063DA; margin-bottom:24px;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; color:#0063DA; display:block; margin-bottom:8px;">⏱ Tiempo de entrega estimado:</span>
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; color:#111111; margin:0;">7 a 10 Días Hábiles</p>
+        </div>
+
+        <div style="border:2px solid #0063DA; overflow:hidden; box-shadow:4px 4px 0 #0063DA;">
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNoyfJG61Gp3ZV_HnvgRb4iHj4ozYq8xecsV5x9hiwDg7I7SeSdzfrtQ88ly52zYI7pzgWFjZb5yMKJBVlWi2pvoOBUmIkxPzTcgu2wtSP7V5TWf8cUMMIm2yyrl0_UB8vZc_i0v3gt0B9-EbGfDKpd3nShIE9VluZIO_BrnbufSihBfwRwVHt5AObmA2VNpWTkEvljXhvtfJ5BcI9mkcLpwTvQY7f_1nBRW6s4qK3bw2V1snYs8H_2RoUUtodxErC37DeJmEdYoa9" alt="Dashboard" style="width:100%; display:block;" />
         </div>
       </div>
 
-      <div class="brut-reveal brut-reveal-delay-2" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; padding:48px;">
-        <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
-          <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; font-variation-settings:'FILL' 1;">star</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; text-transform:uppercase; color:#111111;">Paquete Completo</h3>
+      <!-- Paquete de contratación -->
+      <div class="brut-reveal" style="background:#ffffff; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+            <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA;">star</span>
+            <h3 style="font-size:28px; color:#111111; margin:0;">Paquete Embudo Completo</h3>
+          </div>
+
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:56px; font-weight:900; color:#0063DA; line-height:1; margin-bottom:4px;">$5,499</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#555555; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:28px; font-weight:700;">MXN / Pago Único de Configuración</div>
+
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#0063DA; display:block; margin-bottom:12px;">// El servicio incluye:</span>
+
+          <ul style="list-style:none; padding:0; margin:0 0 32px; display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Diseño de landing page de alta conversión</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Configuración y automatización del embudo</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Integración de calendario de citas</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Diseño de 3 emails para entrega a clientes</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Diseño de formulario y configuración de API de Facebook</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold; flex-shrink:0;">✓</span>Especialista en campañas y lanzamiento de campaña</li>
+          </ul>
+
+          <div style="background:#f1f1f1; border:2px solid #0063DA; padding:16px; margin-bottom:28px;">
+            <p style="font-family:'Barlow',sans-serif; font-size:12px; color:#555555; line-height:1.5; margin:0;">
+              <strong>NOTA IMPORTANTE:</strong> Pago único para la configuración del embudo y dejarlo funcionando. No incluye el monto a invertir en las campañas publicitarias. <em>*No incluye el pago de la plataforma de HighLead para elaborar toda la automatización. Consultar precios de plataforma en highlead.us</em>
+            </p>
+          </div>
         </div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:56px; font-weight:900; color:#0063DA; line-height:1; margin-bottom:8px;">$3,999</div>
-        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#555; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:32px;">USD / Proyecto completo</div>
-        <ul style="list-style:none; padding:0; margin:0 0 36px; display:flex; flex-direction:column; gap:14px;">
-          {[
-            'Diseño de landing page de alta conversión',
-            'Configuración y automatización en GoHighLevel',
-            'Integración de calendario de citas automático',
-            'Secuencia de 3 emails de nurturing',
-            'Integración de formularios y API de conversión',
-          ].map(f => (
-            <li style="display:flex; align-items:start; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;">
-              <span style="color:#0063DA; font-size:16px; flex-shrink:0; margin-top:1px;">✓</span>{f}
-            </li>
-          ))}
-        </ul>
-        <a href="/contacto" style="display:flex; justify-content:center; padding:16px 24px; background:#0063DA; color:#fff; border:2px solid #004eb1; box-shadow:3px 3px 0 #004eb1; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; transition:all 150ms;"
-          onmouseover="this.style.background='#004eb1'; this.style.boxShadow='5px 5px 0 #004eb1'; this.style.transform='translate(-1px,-1px)'"
-          onmouseout="this.style.background='#0063DA'; this.style.boxShadow='3px 3px 0 #004eb1'; this.style.transform='none'">
-          CONTRATAR AHORA →
-        </a>
+
+        <a href="/contacto" class="brut-btn-filled brut-btn" style="width:100%; justify-content:center;">CONTRATAR AHORA →</a>
       </div>
 
     </div>

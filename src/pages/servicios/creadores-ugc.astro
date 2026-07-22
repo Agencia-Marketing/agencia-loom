@@ -3,98 +3,146 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Creadores UGC | Loom" currentPage="servicios">
 
-  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
-    <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 08]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
-        CREADORES<br/><span style="color:#0063DA;">UGC</span>
-      </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
-        Humaniza tu marca e impulsa tus ventas con contenido auténtico creado por usuarios reales. El "boca a boca" adaptado a la era digital.
-      </p>
-      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXRqlRBnXPOUpmhBcGowWVCIMgnbmqS7eJ6MzFyQAuiIYe8AOYDMStUoukmUWCN8MRIfaIi1YOYZdd2_LhaAMOj5UqRR4dKJO86QYWJXRSTe1NV6wOZbSRPE9tnSqH6ykR0pqLMTT11U84pt_v_Bg5HQ1mMP0_2cWDTt6BftIERQpvTFtlzXT7o8gWOtQ0tXnDN-QGOEpC1sm80OeaMfYxW0Tu4blx94ljKHKIouQLTRxQ17RjDopYeYc1rKAHXocX_x9mJdUFhIeU" alt="Creadores UGC" style="width:100%; display:block;" />
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:72px 24px 64px; border-bottom:4px solid #0063DA; border-left:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+
+      <div>
+        <span class="brut-section-label" style="display:inline-block; background:#0063DA; color:#f1f1f1; padding:4px 12px; border:2px solid #111111; box-shadow:3px 3px 0 #111111; margin-bottom:20px; font-weight:700;">
+          [ SERVICIO / 08 ]
+        </span>
+
+        <h1 style="font-size:clamp(48px,6vw,84px); line-height:0.92; margin-bottom:20px; text-transform:uppercase; font-weight:900;">
+          CREADORES<br/><span style="color:#0063DA;">UGC</span>
+        </h1>
+
+        <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.6; max-width:540px; margin-bottom:32px;">
+          Humaniza tu marca e impulsa tus ventas con contenido auténtico creado por usuarios reales. El "boca a boca" adaptado a la era digital.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <a href="/contacto" class="brut-btn" style="background:#0063DA; color:#f1f1f1; border-color:#0063DA; box-shadow:4px 4px 0 #111111; font-size:13px; padding:16px 28px;">
+            CONTRATAR CREADOR →
+          </a>
+          <a href="#planes" class="brut-btn" style="font-size:13px; padding:16px 24px;">
+            VER PAQUETE
+          </a>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top:32px; border-top:2px solid #0063DA; padding-top:20px; flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Guión Vendedor
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Creador Especializado
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Edición + Trafficker
+          </span>
+        </div>
       </div>
+
+      <div style="position:relative;">
+        <div style="border:2px solid #0063DA; background:#ffffff; box-shadow:6px 6px 0 #0063DA; padding:20px; position:relative;">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXRqlRBnXPOUpmhBcGowWVCIMgnbmqS7eJ6MzFyQAuiIYe8AOYDMStUoukmUWCN8MRIfaIi1YOYZdd2_LhaAMOj5UqRR4dKJO86QYWJXRSTe1NV6wOZbSRPE9tnSqH6ykR0pqLMTT11U84pt_v_Bg5HQ1mMP0_2cWDTt6BftIERQpvTFtlzXT7o8gWOtQ0tXnDN-QGOEpC1sm80OeaMfYxW0Tu4blx94ljKHKIouQLTRxQ17RjDopYeYc1rKAHXocX_x9mJdUFhIeU"
+            alt="Creadores UGC"
+            style="width:100%; height:auto; display:block; object-fit:contain; max-height:380px;"
+          />
+        </div>
+
+        <div style="position:absolute; bottom:-16px; left:-16px; background:#111111; color:#f1f1f1; padding:8px 16px; border:2px solid #0063DA; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; box-shadow:3px 3px 0 #0063DA;">
+          ⭐ Contenido Auténtico
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
+  <!-- FEATURES -->
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="ugc-feat">
       <style>.ugc-feat{grid-template-columns:1fr!important} @media(min-width:768px){.ugc-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
         { icon:'record_voice_over', title:'Creadores Verificados', desc:'+3,500 creadores UGC listos en múltiples nichos.' },
-        { icon:'thumb_up',          title:'Confianza Auténtica',  desc:'El 94% de usuarios confía más en UGC que en ads tradicionales.' },
-        { icon:'rocket_launch',     title:'CTR x3',               desc:'Triple de clics comparado con publicidad convencional.' },
+        { icon:'thumb_up',          title:'Confianza Auténtica',   desc:'94% de usuarios confía más en UGC que en ads tradicionales.' },
+        { icon:'rocket_launch',     title:'CTR x3',                desc:'Triple de clics comparado con publicidad convencional.' },
       ].map((f, i) => (
         <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
           <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <h3 style="font-size:20px; margin-bottom:8px;">{f.title}</h3>
           <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <!-- Bento + Pricing -->
-  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
-    <div style="max-width:1280px; margin:0 auto; display:grid; gap:2px; background:#0063DA; border:2px solid #0063DA;" class="ugc-layout">
-      <style>.ugc-layout{grid-template-columns:1fr!important} @media(min-width:768px){.ugc-layout{grid-template-columns:5fr 7fr!important}}</style>
+  <!-- PAQUETE UGC -->
+  <section id="planes" style="background:#f1f1f1; padding:80px 24px;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:32px; align-items:stretch;">
 
-      <!-- Pricing card -->
-      <div class="brut-reveal" style="background:#f1f1f1; padding:48px; border-right:2px solid #0063DA;">
-        <span class="brut-section-label" style="margin-bottom:16px;">[02] / Plan Pro</span>
-        <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:36px; font-weight:900; text-transform:uppercase; color:#0063DA; margin-bottom:8px; line-height:1.0;">
-          El poder del contenido auténtico
-        </h2>
-        <p style="font-family:'Barlow',sans-serif; font-size:15px; color:#555555; line-height:1.6; margin-bottom:24px;">
-          Las personas confían en personas. El UGC rompe la barrera de la desconfianza y conecta genuinamente con tu audiencia.
-        </p>
-        <div style="background:#f1f1f1; border:2px solid #0063DA; padding:24px; margin-bottom:28px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
-          <div>
-            <div style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555; margin-bottom:4px;">Inversión desde</div>
-            <div style="font-family:'Barlow Condensed',sans-serif; font-size:48px; font-weight:900; color:#0063DA; line-height:1;">$2,999</div>
+      <!-- Detalles y paquete -->
+      <div class="brut-reveal" style="background:#ffffff; border:2px solid #0063DA; padding:40px; box-shadow:6px 6px 0 #0063DA; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <span class="brut-section-label">[02] / Paquete Completo</span>
+            <span class="brut-tag">UGC + CAMPAÑA</span>
           </div>
-          <span class="brut-tag">Plan Pro</span>
+          <h2 style="font-size:36px; color:#0063DA; margin-bottom:8px; line-height:1.0;">El poder del contenido auténtico</h2>
+          <p style="font-family:'Barlow',sans-serif; font-size:15px; color:#555555; line-height:1.6; margin-bottom:24px;">Las personas confían en personas. El contenido generado por usuarios rompe la barrera de la desconfianza y conecta de inmediato.</p>
+
+          <div style="background:#f1f1f1; border:2px solid #0063DA; padding:24px; margin-bottom:24px;">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#555555; margin-bottom:4px;">Precio del servicio</div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-size:52px; font-weight:900; color:#0063DA; line-height:1; margin-bottom:4px;">$4,199 <span style="font-size:24px;">MXN</span></div>
+          </div>
+
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#0063DA; display:block; margin-bottom:12px;">// Incluye:</span>
+          <ul style="list-style:none; padding:0; margin:0 0 24px; display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseño script (guión de video vendedor)</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Contratación de persona que realizará el video</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>1 Video con edición</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Propuesta de campaña para lanzamiento de publicidad</li>
+            <li style="display:flex; gap:10px; font-family:'Barlow',sans-serif; font-size:15px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>1 Trafficker para lanzamiento y monitoreo de la campaña durante máx. 30 días</li>
+          </ul>
+
+          <div style="border-top:2px solid #0063DA; padding-top:16px; margin-bottom:28px;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; color:#111111; display:block; margin-bottom:6px;">⏱ Tiempo de entrega:</span>
+            <p style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; margin:0; line-height:1.5;">
+              <strong>Guión:</strong> 3 días hábiles.<br/>
+              <strong>Video:</strong> 5-7 días hábiles.
+            </p>
+          </div>
         </div>
-        <ul style="list-style:none; padding:0; margin:0 0 28px; display:flex; flex-direction:column; gap:12px;">
-          {[
-            'Diseño de script profesional',
-            'Selección de perfil especializado',
-            '1 video editado listo para publicar',
-            'Propuesta estratégica de contenido',
-            '1 Trafficker (30 días de optimización)',
-          ].map(f => (
-            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;">
-              <span style="color:#0063DA; flex-shrink:0;">✓</span>{f}
-            </li>
-          ))}
-        </ul>
-        <a href="/contacto" class="brut-btn-filled brut-btn" style="width:100%; justify-content:center;">CONTRATAR AHORA →</a>
+
+        <a href="/contacto" class="brut-btn-filled brut-btn" style="width:100%;">CONTRATAR AHORA →</a>
       </div>
 
-      <!-- Bento stats + grid -->
-      <div class="brut-reveal brut-reveal-delay-2" style="background:#f1f1f1; padding:48px; display:flex; flex-direction:column; gap:24px;">
-        <div style="border:2px solid #0063DA; padding:24px;">
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:8px;">+3,500 creadores UGC listos</h3>
-          <p style="font-family:'Barlow',sans-serif; font-size:15px; color:#555555;">Red global de creadores apasionados por tu industria.</p>
+      <!-- Recursos y métricas -->
+      <div class="brut-reveal" style="background:#f1f1f1; display:flex; flex-direction:column; gap:24px;">
+
+        <div style="border:2px solid #0063DA; background:#ffffff; padding:28px; box-shadow:4px 4px 0 #0063DA;">
+          <h3 style="font-size:26px; margin-bottom:8px; color:#0063DA;">+3,500 creadores UGC listos</h3>
+          <p style="font-family:'Barlow',sans-serif; font-size:15px; color:#555555; margin:0; line-height:1.5;">Red global de creadores apasionados y seleccionados según el nicho específico de tu marca.</p>
         </div>
 
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#0063DA; border:2px solid #0063DA; flex-grow:1;">
-          <div style="grid-column:1/-1; border:2px solid #0063DA; overflow:hidden; min-height:200px; background:#0063DA;">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe2einU6nwpj_efl8NizXsNTJZBMcf67PrFXuljRvmianwgusmmt4Lj4beG6LPN3gDX2RRFXAw-xz5gOjkVBF5BctZ7AC-g-fxlGgXHurN7SyKix8MRIkDFaGWDI7JAzYxmU0_QZZnI2LxD2ktjuz2FnjRi6chTkELxNTRm80rqOughliPWAW5-0XKZDM2eNFOAGS_VCjaZ2AWwcDTadDp0UcHpXManZPkNZe3JL9IQkr4M9Jhqp4Rlv_Tcn4WzsVBU3i8xTWCJMcT" alt="Creadores" style="width:100%; height:200px; object-fit:cover; display:block;" />
-          </div>
-          <div style="background:#f1f1f1; padding:32px; display:flex; flex-direction:column; justify-content:flex-end;">
-            <span class="material-symbols-outlined" style="font-size:28px; color:#0063DA; margin-bottom:16px;">trending_up</span>
+        <div style="border:2px solid #0063DA; overflow:hidden; box-shadow:4px 4px 0 #0063DA; height:200px;">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe2einU6nwpj_efl8NizXsNTJZBMcf67PrFXuljRvmianwgusmmt4Lj4beG6LPN3gDX2RRFXAw-xz5gOjkVBF5BctZ7AC-g-fxlGgXHurN7SyKix8MRIkDFaGWDI7JAzYxmU0_QZZnI2LxD2ktjuz2FnjRi6chTkELxNTRm80rqOughliPWAW5-0XKZDM2eNFOAGS_VCjaZ2AWwcDTadDp0UcHpXManZPkNZe3JL9IQkr4M9Jhqp4Rlv_Tcn4WzsVBU3i8xTWCJMcT" alt="Creadores" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div style="background:#ffffff; border:2px solid #0063DA; padding:24px; box-shadow:4px 4px 0 #0063DA; display:flex; flex-direction:column; justify-content:flex-end;">
+            <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; margin-bottom:12px;">trending_up</span>
             <div style="font-family:'Barlow Condensed',sans-serif; font-size:48px; font-weight:900; color:#0063DA; line-height:1;">94%</div>
-            <p style="font-family:'Barlow',sans-serif; font-size:13px; color:#555555; margin-top:8px; line-height:1.4;">Mayor confianza vs ads tradicionales</p>
+            <p style="font-family:'Barlow',sans-serif; font-size:13px; color:#555555; margin-top:8px;">Mayor confianza vs ads tradicionales</p>
           </div>
-          <div style="background:#f1f1f1; padding:32px; display:flex; flex-direction:column; justify-content:flex-end; border-left:2px solid #0063DA;">
-            <span class="material-symbols-outlined" style="font-size:28px; color:#0063DA; margin-bottom:16px;">rocket_launch</span>
+
+          <div style="background:#ffffff; border:2px solid #0063DA; padding:24px; box-shadow:4px 4px 0 #0063DA; display:flex; flex-direction:column; justify-content:flex-end;">
+            <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; margin-bottom:12px;">rocket_launch</span>
             <div style="font-family:'Barlow Condensed',sans-serif; font-size:48px; font-weight:900; color:#0063DA; line-height:1;">X3</div>
-            <p style="font-family:'Barlow',sans-serif; font-size:13px; color:#555555; margin-top:8px; line-height:1.4;">CTR en Meta Ads y TikTok</p>
+            <p style="font-family:'Barlow',sans-serif; font-size:13px; color:#555555; margin-top:8px;">CTR en Meta Ads y TikTok</p>
           </div>
         </div>
+
       </div>
 
     </div>

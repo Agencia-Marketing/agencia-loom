@@ -3,73 +3,187 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Campañas Publicitarias | Loom" currentPage="servicios">
 
-  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
-    <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 05]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
-        CAMPAÑAS<br/><span style="color:#0063DA;">PUBLICITARIAS</span>
-      </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
-        Aumenta tu visibilidad y capta clientes calificados con campañas publicitarias optimizadas de alto rendimiento en Meta, Google y TikTok.
-      </p>
-      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Campañas Ads" style="width:100%; display:block;" />
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:72px 24px 64px; border-bottom:4px solid #0063DA; border-left:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+
+      <div>
+        <span class="brut-section-label" style="display:inline-block; background:#0063DA; color:#f1f1f1; padding:4px 12px; border:2px solid #111111; box-shadow:3px 3px 0 #111111; margin-bottom:20px; font-weight:700;">
+          [ SERVICIO / 05 ]
+        </span>
+
+        <h1 style="font-size:clamp(48px,6vw,84px); line-height:0.92; margin-bottom:20px; text-transform:uppercase; font-weight:900;">
+          CAMPAÑAS<br/><span style="color:#0063DA;">PUBLICITARIAS</span>
+        </h1>
+
+        <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.6; max-width:540px; margin-bottom:32px;">
+          Aumenta tu visibilidad y capta clientes altamente calificados mediante anuncios optimizados en Meta, Google Ads y TikTok Ads.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <a href="/contacto" class="brut-btn" style="background:#0063DA; color:#f1f1f1; border-color:#0063DA; box-shadow:4px 4px 0 #111111; font-size:13px; padding:16px 28px;">
+            LANZAR CAMPAÑA →
+          </a>
+          <a href="#planes" class="brut-btn" style="font-size:13px; padding:16px 24px;">
+            VER PLATAFORMAS
+          </a>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top:32px; border-top:2px solid #0063DA; padding-top:20px; flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Meta Ads
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Google Search & Display
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Retorno (ROI) Medible
+          </span>
+        </div>
       </div>
+
+      <div style="position:relative;">
+        <div style="border:2px solid #0063DA; background:#ffffff; box-shadow:6px 6px 0 #0063DA; padding:20px; position:relative;">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"
+            alt="Campañas Publicitarias"
+            style="width:100%; height:auto; display:block; object-fit:contain; max-height:380px;"
+          />
+        </div>
+
+        <div style="position:absolute; bottom:-16px; left:-16px; background:#111111; color:#f1f1f1; padding:8px 16px; border:2px solid #0063DA; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; box-shadow:3px 3px 0 #0063DA;">
+          🎯 Captación de Leads
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
+  <!-- FEATURES -->
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="cp-feat">
       <style>.cp-feat{grid-template-columns:1fr!important} @media(min-width:768px){.cp-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
-        { icon:'ads_click',   title:'Meta Ads',    desc:'Facebook e Instagram Ads con segmentación de audiencias precisas.' },
-        { icon:'search',      title:'Google Ads',  desc:'Search, Display y Shopping optimizados para máximo ROI.' },
-        { icon:'music_note',  title:'TikTok Ads',  desc:'Formatos nativos virales que conectan con nuevas audiencias.' },
+        { icon:'ads_click',  title:'Meta Ads',   desc:'Facebook e Instagram Ads con segmentación precisa.' },
+        { icon:'search',     title:'Google Ads', desc:'Search, Display y Shopping optimizados para ROI.' },
+        { icon:'music_note', title:'TikTok Ads', desc:'Formatos nativos virales para nuevas audiencias.' },
       ].map((f, i) => (
         <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
           <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
-          <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
+          <h3 style="font-size:20px; margin-bottom:8px;">{f.title}</h3>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:16px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
+  <!-- META & TIKTOK ADS -->
+  <section id="planes" style="background:#f1f1f1; padding:80px 24px;">
     <div style="max-width:1280px; margin:0 auto;">
-      <span class="brut-section-label" style="margin-bottom:8px; color:#0063DA;">[02] / Planes</span>
-      <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:48px;">
-        Publicidad que <span style="color:#0063DA;">convierte</span>
-      </h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:2px; background:#0063DA; border:2px solid #0063DA;">
+
+      <div style="border:2px solid #0063DA; background:#ffffff; padding:32px; box-shadow:5px 5px 0 #0063DA; margin-bottom:48px;">
+        <span class="brut-section-label" style="margin-bottom:8px;">[01] / Captación Rápida</span>
+        <h2 style="font-size:clamp(28px,3.5vw,44px); margin-bottom:12px; color:#0063DA;">Obtén clientes potenciales en corto tiempo</h2>
+        <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555; line-height:1.6; margin:0;">Conoce todas las opciones que tiene Meta para ti, con la ayuda de nuestros expertos en campañas, llega a los resultados que esperas en un menor lapso de tiempo. Pero no nos quedamos solamente con eso, también contamos con campañas en TikTok Ads, aprovecha una de las redes en tendencia.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
+
         {[
-          { badge:'',            name:'Launch',     price:'$1,500/mes', features:['1 plataforma','Presupuesto hasta $2,000','2 campañas activas','Reporte semanal'] },
-          { badge:'RECOMENDADO', name:'Scale',      price:'$2,800/mes', features:['3 plataformas','Presupuesto hasta $5,000','A/B testing continuo','Optimización diaria'] },
-          { badge:'',            name:'Dominate',   price:'$5,500/mes', features:['Plataformas ilimitadas','Presupuesto sin tope','Creativo de piezas incluido','Trafficker dedicado'] },
+          { name:'Facebook Ads', price:'$850 MXN', desc:'Llega a clientes interesados en tu producto o servicio con anuncios efectivos, incluye lo siguiente:' },
+          { name:'Instagram Ads', price:'$850 MXN', desc:'Generamos una estrategia según el giro de tu negocio, incluye lo siguiente:' },
+          { name:'TikTok Ads', price:'$850 MXN', desc:'Aprovecha al máximo la creatividad de los videos, incluye lo siguiente:' },
         ].map(p => (
-          <div class="brut-reveal" style={p.badge ? 'background:#0063DA; position:relative;' : 'background:#f1f1f1; position:relative;'}>
-            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#f1f1f1; padding:6px; text-align:center; border-bottom:2px solid #004eb1;">
-              <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#0063DA;">{p.badge}</span>
-            </div>}
-            <div style={`padding:${p.badge ? '52px 28px 28px' : '28px'}; height:100%; display:flex; flex-direction:column;`}>
-              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#fff' : '#111111'};`}>{p.name}</h3>
-              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#fff' : '#0063DA'};`}>{p.price}</div>
-              <ul style="list-style:none; padding:0; margin:0 0 28px; flex-grow:1; display:flex; flex-direction:column; gap:10px;">
-                {p.features.map(f => (
-                  <li style={`display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? 'rgba(255,255,255,0.85)' : '#555555'};`}>
-                    <span style={`color:${p.badge ? '#fff' : '#0063DA'}; flex-shrink:0;`}>✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href="/contacto" style={`display:inline-flex; justify-content:center; padding:14px 24px; border:2px solid ${p.badge ? '#fff' : '#0063DA'}; color:${p.badge ? '#fff' : '#0063DA'}; background:transparent; font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; box-shadow:3px 3px 0 ${p.badge ? 'rgba(0,0,0,0.3)' : '#004eb1'}; transition:all 150ms;`}
-                onmouseover={`this.style.background='${p.badge ? '#fff' : '#0063DA'}'; this.style.color='${p.badge ? '#0063DA' : '#fff'}'`}
-                onmouseout={`this.style.background='transparent'; this.style.color='${p.badge ? '#fff' : '#0063DA'}'`}>
-                CONTRATAR →
-              </a>
+          <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="background:#0063DA; color:#f1f1f1; padding:24px; text-align:center;">
+                <h3 style="font-size:22px; margin-bottom:4px; color:#f1f1f1;">{p.name}</h3>
+                <div style="font-family:'Barlow Condensed',sans-serif; font-size:36px; font-weight:900;">{p.price}</div>
+              </div>
+              <div style="padding:24px;">
+                <p style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; line-height:1.5; margin-bottom:16px;">{p.desc}</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px;">
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Análisis inicial</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Segmentación de un mercado objetivo</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Formato de propuesta de campaña</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Lanzamiento y monitoreo de campaña</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Duración máxima de 30 días</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Un Agente asignado</li>
+                  <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:16px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Reporte de resultados</li>
+                </ul>
+              </div>
+            </div>
+            <div style="padding:0 24px 24px;">
+              <p style="font-family:'Barlow',sans-serif; font-weight:700; font-size:16px; color:#111111; margin-bottom:16px;">Inversión de campaña no incluida.</p>
+              <a href="/contacto" class="brut-btn" style="width:100%;">CONTRATAR →</a>
             </div>
           </div>
         ))}
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE ADS -->
+  <section style="background:#f1f1f1; padding:80px 24px;">
+    <div style="max-width:1280px; margin:0 auto;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; align-items:stretch;">
+
+        <!-- Info -->
+        <div style="border:2px solid #0063DA; background:#ffffff; padding:28px; box-shadow:4px 4px 0 #0063DA; display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+          <div>
+            <span class="brut-section-label" style="margin-bottom:8px;">[02] / Estrategia</span>
+            <h2 style="font-size:clamp(22px,2vw,30px); margin-bottom:16px; color:#0063DA; line-height:1.1;">Lleva más y más clientes al sitio web de tu negocio</h2>
+            <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555; margin-bottom:20px; line-height:1.5;">Conoce las diferencias de las campañas que manejamos en Google.</p>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div>
+                <h4 style="font-size:15px; margin-bottom:2px; color:#111111;">Campaña Google Search:</h4>
+                <p style="font-family:'Barlow',sans-serif; font-size:12px; color:#555555; line-height:1.4; margin:0;">Posiciónate dentro de los primeros resultados de búsqueda.</p>
+              </div>
+              <div>
+                <h4 style="font-size:15px; margin-bottom:2px; color:#111111;">Campaña Google Display:</h4>
+                <p style="font-family:'Barlow',sans-serif; font-size:12px; color:#555555; line-height:1.4; margin:0;">Llega a audiencias relevantes con anuncios en millones de sitios web.</p>
+              </div>
+              <div>
+                <h4 style="font-size:15px; margin-bottom:2px; color:#111111;">Campaña Google YouTube:</h4>
+                <p style="font-family:'Barlow',sans-serif; font-size:12px; color:#555555; line-height:1.4; margin:0;">Publicidad de video donde solo pagas cuando eligen ver tu video.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {[
+          { name:'Google Search', price:'$1,700 MXN', desc:'Llega a clientes interesados en tu producto o servicio con anuncios de texto.', extra: 'Búsqueda y selección de palabras clave' },
+          { name:'Google Display', price:'$2,500 MXN', desc:'Publicación de anuncios display en páginas web, incluye lo siguiente:', extra: 'Creación del banner solicitado' },
+          { name:'Google Video YouTube', price:'$4,199 MXN', desc:'Publicación de anuncios en YouTube, incluye lo siguiente:', extra: 'Creación de video (6, 15 o 20 seg)' },
+        ].map(p => (
+          <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+            <div>
+              <div style="background:#0063DA; color:#f1f1f1; padding:20px; text-align:center;">
+                <h3 style="font-size:20px; margin-bottom:4px; color:#f1f1f1;">{p.name}</h3>
+                <div style="font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:900;">{p.price}</div>
+              </div>
+              <div style="padding:20px;">
+                <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555; line-height:1.4; margin-bottom:12px;">{p.desc}</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Análisis inicial</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>{p.extra}</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Segmentación de un mercado objetivo</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Formato de propuesta de campaña</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Lanzamiento y monitoreo</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Un Agente asignado</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Duración máxima de 30 días</li>
+                  <li style="display:flex; gap:6px; font-family:'Barlow',sans-serif; font-size:12px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">•</span>Reporte de resultados</li>
+                </ul>
+              </div>
+            </div>
+            <div style="padding:0 20px 20px;">
+              <p style="font-family:'Barlow',sans-serif; font-weight:700; font-size:12px; color:#111111; margin-bottom:12px;">Inversión de campaña no incluida.</p>
+              <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 14px; font-size:11px;">CONTRATAR →</a>
+            </div>
+          </div>
+        ))}
+
       </div>
     </div>
   </section>

@@ -3,23 +3,64 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Diseño Gráfico | Loom" currentPage="servicios">
 
-  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
-    <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 03]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
-        DISEÑO<br/><span style="color:#0063DA;">GRÁFICO</span>
-      </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
-        Potenciamos tu marca y generamos una impresión duradera con creaciones visuales atractivas y de nivel premium.
-      </p>
-      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Diseño Gráfico" style="width:100%; display:block;" />
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:72px 24px 64px; border-bottom:4px solid #0063DA; border-left:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+
+      <div>
+        <span class="brut-section-label" style="display:inline-block; background:#0063DA; color:#f1f1f1; padding:4px 12px; border:2px solid #111111; box-shadow:3px 3px 0 #111111; margin-bottom:20px; font-weight:700;">
+          [ SERVICIO / 03 ]
+        </span>
+
+        <h1 style="font-size:clamp(48px,6vw,84px); line-height:0.92; margin-bottom:20px; text-transform:uppercase; font-weight:900;">
+          DISEÑO<br/><span style="color:#0063DA;">GRÁFICO</span>
+        </h1>
+
+        <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.6; max-width:540px; margin-bottom:32px;">
+          Potenciamos tu marca con sistemas visuales impactantes, identidad corporativa y piezas publicitarias de nivel premium.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <a href="/contacto" class="brut-btn" style="background:#0063DA; color:#f1f1f1; border-color:#0063DA; box-shadow:4px 4px 0 #111111; font-size:13px; padding:16px 28px;">
+            COTIZAR BRANDING →
+          </a>
+          <a href="#planes" class="brut-btn" style="font-size:13px; padding:16px 24px;">
+            VER PAQUETES
+          </a>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top:32px; border-top:2px solid #0063DA; padding-top:20px; flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Manual de Marca
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Assets Digitales
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Archivos Editables
+          </span>
+        </div>
       </div>
+
+      <div style="position:relative;">
+        <div style="border:2px solid #0063DA; background:#ffffff; box-shadow:6px 6px 0 #0063DA; padding:20px; position:relative;">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"
+            alt="Diseño Gráfico"
+            style="width:100%; height:auto; display:block; object-fit:contain; max-height:380px;"
+          />
+        </div>
+
+        <div style="position:absolute; bottom:-16px; left:-16px; background:#111111; color:#f1f1f1; padding:8px 16px; border:2px solid #0063DA; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; box-shadow:3px 3px 0 #0063DA;">
+          🎨 Identidad Única
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
+  <!-- FEATURES -->
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="dg-feat">
       <style>.dg-feat{grid-template-columns:1fr!important} @media(min-width:768px){.dg-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
@@ -29,44 +70,74 @@ import Layout from '../../layouts/Layout.astro';
       ].map((f, i) => (
         <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
           <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <h3 style="font-size:20px; margin-bottom:8px;">{f.title}</h3>
           <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
+  <!-- PLANES -->
+  <section id="planes" style="background:#f1f1f1; padding:80px 24px;">
     <div style="max-width:1280px; margin:0 auto;">
       <span class="brut-section-label" style="margin-bottom:8px;">[02] / Planes</span>
-      <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:48px;">
-        Paquetes de diseño <span style="color:#0063DA;">a tu medida</span>
-      </h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:2px; background:#0063DA; border:2px solid #0063DA;">
-        {[
-          { badge:'',            name:'Brand Starter',  price:'$3,500',  features:['Logo primario + variantes','Paleta de colores','Tipografías corporativas','Manual básico de marca'] },
-          { badge:'RECOMENDADO', name:'Brand Pro',      price:'$7,000',  features:['Todo de Brand Starter','Papelería corporativa','Plantillas RRSS','Manual de marca completo'] },
-          { badge:'',            name:'Brand Full',     price:'$12,000', features:['Todo de Brand Pro','Motion graphics','Pack de iconos custom','Soporte 6 meses'] },
-          { badge:'',            name:'Enterprise',     price:'A consultar', features:['Rebranding completo','Sistema de diseño digital','Guía de implementación','Formación del equipo'] },
-        ].map(p => (
-          <div class="brut-reveal" style={p.badge ? 'background:#0063DA; position:relative;' : 'background:#f1f1f1; position:relative;'}>
-            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#0063DA; padding:6px; text-align:center;">
-              <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#fff;">{p.badge}</span>
-            </div>}
-            <div style={`padding:${p.badge ? '52px 28px 28px' : '28px'}; height:100%; display:flex; flex-direction:column;`}>
-              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#f1f1f1' : '#111111'};`}>{p.name}</h3>
-              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:32px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#f1f1f1' : '#0063DA'};`}>{p.price}</div>
-              <ul style="list-style:none; padding:0; margin:0 0 28px; flex-grow:1; display:flex; flex-direction:column; gap:10px;">
-                {p.features.map(f => (
-                  <li style={`display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? '#f1f1f1' : '#555555'};`}>
-                    <span style={`color:${p.badge ? '#f1f1f1' : '#0063DA'}; flex-shrink:0;`}>✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href="/contacto" class={p.badge ? 'brut-btn-dark brut-btn' : 'brut-btn'} style="justify-content:center;">CONTRATAR →</a>
-            </div>
+      <h2 style="font-size:clamp(32px,4vw,52px); margin-bottom:48px;">Paquetes de diseño <span style="color:#0063DA;">a tu medida</span></h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; background:#f1f1f1;">
+
+        <!-- Naming -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column;">
+          <h3 style="font-size:20px; margin-bottom:8px;">Naming</h3>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; color:#0063DA; margin-bottom:16px;">$1,400</div>
+          <ul style="list-style:none; padding:0; margin:0 0 20px; flex-grow:1; display:flex; flex-direction:column; gap:8px;">
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Creación del nombre de tu marca</li>
+          </ul>
+          <a href="/contacto" class="brut-btn" style="font-size:11px; padding:10px 16px;">CONTRATAR →</a>
+        </div>
+
+        <!-- Diseño de Marca (RECOMENDADO) -->
+        <div class="brut-reveal" style="background:#0063DA; border:2px solid #0063DA; box-shadow:5px 5px 0 #111111; padding:24px; display:flex; flex-direction:column; position:relative;">
+          <div style="position:absolute; top:0; left:0; right:0; background:#111111; padding:6px; text-align:center;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#ffffff;">RECOMENDADO</span>
           </div>
-        ))}
+          <div style="padding-top:32px; display:flex; flex-direction:column; height:100%;">
+            <h3 style="font-size:20px; margin-bottom:8px; color:#f1f1f1;">Diseño de Marca</h3>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; color:#f1f1f1; margin-bottom:16px;">$4,900</div>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; flex-grow:1; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Logo primario + variantes</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Manual de identidad corporativa</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Paleta de colores</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Usos y presentaciones</li>
+            </ul>
+            <a href="/contacto" class="brut-btn" style="font-size:11px; padding:10px 16px; background:#f1f1f1; color:#0063DA; border-color:#f1f1f1; box-shadow:3px 3px 0 #111111;">CONTRATAR →</a>
+          </div>
+        </div>
+
+        <!-- Menu Digital Pyme -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column;">
+          <h3 style="font-size:20px; margin-bottom:8px;">Menú Digital Pyme</h3>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; color:#0063DA; margin-bottom:16px;">$2,500</div>
+          <ul style="list-style:none; padding:0; margin:0 0 20px; flex-grow:1; display:flex; flex-direction:column; gap:8px;">
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseño de menú digital</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Descripción y precios</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseño de tent card con código QR</li>
+          </ul>
+          <a href="/contacto" class="brut-btn" style="font-size:11px; padding:10px 16px;">CONTRATAR →</a>
+        </div>
+
+        <!-- Menú Digital Empresarial -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column;">
+          <h3 style="font-size:20px; margin-bottom:8px;">Menú Digital Empresarial</h3>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; color:#0063DA; margin-bottom:16px;">$3,000</div>
+          <ul style="list-style:none; padding:0; margin:0 0 20px; flex-grow:1; display:flex; flex-direction:column; gap:8px;">
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseño de menú digital</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Descripción y precios</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Fotografías de los platillos</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseño de tent card con código QR</li>
+            <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:13px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Vinculación de redes sociales</li>
+          </ul>
+          <a href="/contacto" class="brut-btn" style="font-size:11px; padding:10px 16px;">CONTRATAR →</a>
+        </div>
+
       </div>
     </div>
   </section>

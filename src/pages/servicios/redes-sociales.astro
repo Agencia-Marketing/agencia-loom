@@ -3,71 +3,247 @@ import Layout from '../../layouts/Layout.astro';
 ---
 <Layout title="Gestión de Redes | Loom" currentPage="servicios">
 
-  <section style="background:#f1f1f1; padding:100px 24px 80px; border-bottom:4px solid #0063DA; position:relative;">
-    <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:#0063DA;"></div>
-    <div style="max-width:1280px; margin:0 auto;">
-      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#0063DA; display:block; margin-bottom:16px;">[SERVICIO / 04]</span>
-      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(52px,8vw,100px); font-weight:900; text-transform:uppercase; line-height:0.92; color:#111111; margin-bottom:24px;">
-        GESTIÓN DE<br/><span style="color:#0063DA;">REDES SOCIALES</span>
-      </h1>
-      <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.65; max-width:600px; margin-bottom:48px;">
-        Incrementa la interacción con tu audiencia y la notoriedad de tu marca mediante una gestión experta y estratégica de tus redes.
-      </p>
-      <div style="max-width:900px; border:2px solid #0063DA; box-shadow:6px 6px 0 #0063DA; overflow:hidden;">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv" alt="Redes Sociales" style="width:100%; display:block;" />
+  <!-- HERO -->
+  <section style="background:#f1f1f1; padding:72px 24px 64px; border-bottom:4px solid #0063DA; border-left:4px solid #0063DA; position:relative; overflow:hidden;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+
+      <div>
+        <span class="brut-section-label" style="display:inline-block; background:#0063DA; color:#f1f1f1; padding:4px 12px; border:2px solid #111111; box-shadow:3px 3px 0 #111111; margin-bottom:20px; font-weight:700;">
+          [ SERVICIO / 04 ]
+        </span>
+
+        <h1 style="font-size:clamp(48px,6vw,84px); line-height:0.92; margin-bottom:20px; text-transform:uppercase; font-weight:900;">
+          GESTIÓN DE<br/><span style="color:#0063DA;">REDES SOCIALES</span>
+        </h1>
+
+        <p style="font-family:'Barlow',sans-serif; font-size:18px; color:#555555; line-height:1.6; max-width:540px; margin-bottom:32px;">
+          Incrementa la interacción con tu audiencia y posiciona tu marca con una estrategia integral de contenido, diseño y atención al cliente.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;">
+          <a href="/contacto" class="brut-btn" style="background:#0063DA; color:#f1f1f1; border-color:#0063DA; box-shadow:4px 4px 0 #111111; font-size:13px; padding:16px 28px;">
+            ELEGIR PAQUETE →
+          </a>
+          <a href="#planes" class="brut-btn" style="font-size:13px; padding:16px 24px;">
+            VER PRECIOS
+          </a>
+        </div>
+
+        <div style="display:flex; gap:20px; margin-top:32px; border-top:2px solid #0063DA; padding-top:20px; flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Community Manager
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Trafficker Dedicado
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700; color:#111111; display:flex; align-items:center; gap:6px;">
+            <span style="color:#0063DA;">✓</span> Reportes Mensuales
+          </span>
+        </div>
       </div>
+
+      <div style="position:relative;">
+        <div style="border:2px solid #0063DA; background:#ffffff; box-shadow:6px 6px 0 #0063DA; padding:20px; position:relative;">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"
+            alt="Redes Sociales"
+            style="width:100%; height:auto; display:block; object-fit:contain; max-height:380px;"
+          />
+        </div>
+
+        <div style="position:absolute; bottom:-16px; left:-16px; background:#111111; color:#f1f1f1; padding:8px 16px; border:2px solid #0063DA; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; box-shadow:3px 3px 0 #0063DA;">
+          📲 Contenido Estratégico
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section style="background:#f1f1f1; border-top:4px solid #0063DA; border-bottom:2px solid #0063DA;">
+  <!-- FEATURES -->
+  <section style="background:#f1f1f1; border-top:4px solid #0063DA;">
     <div style="max-width:1280px; margin:0 auto; display:grid;" class="rs-feat">
       <style>.rs-feat{grid-template-columns:1fr!important} @media(min-width:768px){.rs-feat{grid-template-columns:repeat(3,1fr)!important}}</style>
       {[
-        { icon:'diversity_3',   title:'Community Mgmt',  desc:'Gestión diaria de comentarios, DMs y engagement con tu comunidad.' },
-        { icon:'bar_chart',     title:'Analytics & KPIs', desc:'Reportes detallados de crecimiento, alcance y conversiones.' },
-        { icon:'content_paste', title:'Contenido Estratégico', desc:'Calendario editorial alineado con tus objetivos de negocio.' },
+        { icon:'diversity_3',   title:'Community Mgmt',       desc:'Gestión diaria de comentarios, DMs y engagement.' },
+        { icon:'bar_chart',     title:'Analytics & KPIs',     desc:'Reportes detallados de crecimiento y conversiones.' },
+        { icon:'content_paste', title:'Contenido Estratégico', desc:'Calendario editorial alineado con tus objetivos.' },
       ].map((f, i) => (
         <div style={`padding:40px 32px; ${i < 2 ? 'border-right:2px solid #0063DA;' : ''}`}>
           <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA; display:block; margin-bottom:16px;">{f.icon}</span>
-          <h3 style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; text-transform:uppercase; color:#111111; margin-bottom:8px;">{f.title}</h3>
+          <h3 style="font-size:20px; margin-bottom:8px;">{f.title}</h3>
           <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#555555; line-height:1.5;">{f.desc}</p>
         </div>
       ))}
     </div>
   </section>
 
-  <section style="background:#f1f1f1; padding:80px 24px; border-bottom:2px solid #0063DA;">
+  <!-- PAQUETES DE REDES -->
+  <section id="planes" style="background:#f1f1f1; padding:80px 24px;">
     <div style="max-width:1280px; margin:0 auto;">
-      <span class="brut-section-label" style="margin-bottom:8px;">[02] / Planes mensuales</span>
-      <h2 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(32px,4vw,52px); font-weight:900; text-transform:uppercase; color:#111111; margin-bottom:48px;">
-        Gestión profesional <span style="color:#0063DA;">de tus redes</span>
-      </h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:2px; background:#0063DA; border:2px solid #0063DA;">
-        {[
-          { badge:'',            name:'Starter',   price:'$1,200/mes',  features:['1 red social','12 publicaciones/mes','Respuesta a comentarios','Reporte mensual básico'] },
-          { badge:'RECOMENDADO', name:'Growth',    price:'$2,400/mes',  features:['3 redes sociales','24 publicaciones/mes','Stories diarias','Analytics avanzado'] },
-          { badge:'',            name:'Pro',       price:'$3,600/mes',  features:['5 redes sociales','Post diarios','Paid social incluido','Account manager dedicado'] },
-          { badge:'',            name:'Enterprise',price:'A consultar', features:['Redes ilimitadas','Estrategia omnicanal','Equipo dedicado','Acceso 24/7'] },
-        ].map(p => (
-          <div class="brut-reveal" style={p.badge ? 'background:#0063DA; position:relative;' : 'background:#f1f1f1; position:relative;'}>
-            {p.badge && <div style="position:absolute; top:0; left:0; right:0; background:#0063DA; padding:6px; text-align:center;">
-              <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#fff;">{p.badge}</span>
-            </div>}
-            <div style={`padding:${p.badge ? '52px 28px 28px' : '28px'}; height:100%; display:flex; flex-direction:column;`}>
-              <h3 style={`font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; text-transform:uppercase; margin-bottom:8px; color:${p.badge ? '#f1f1f1' : '#111111'};`}>{p.name}</h3>
-              <div style={`font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:900; margin-bottom:24px; color:${p.badge ? '#f1f1f1' : '#0063DA'};`}>{p.price}</div>
-              <ul style="list-style:none; padding:0; margin:0 0 28px; flex-grow:1; display:flex; flex-direction:column; gap:10px;">
-                {p.features.map(f => (
-                  <li style={`display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:${p.badge ? '#f1f1f1' : '#555555'};`}>
-                    <span style={`color:${p.badge ? '#f1f1f1' : '#0063DA'}; flex-shrink:0;`}>✓</span>{f}
-                  </li>
-                ))}
-              </ul>
-              <a href="/contacto" class={p.badge ? 'brut-btn-dark brut-btn' : 'brut-btn'} style="justify-content:center;">CONTRATAR →</a>
-            </div>
-          </div>
-        ))}
+      <span class="brut-section-label" style="margin-bottom:8px;">[02] / Paquetes de Gestión</span>
+      <h2 style="font-size:clamp(32px,4vw,52px); margin-bottom:16px;">Elige tus <span style="color:#0063DA;">Redes Sociales</span></h2>
+      <p style="font-family:'Barlow',sans-serif; font-size:16px; color:#555555; margin-bottom:36px; max-width:800px;">Precios expresados en Moneda MXN con opción de pago mensual o anual preferencial.</p>
+
+      <!-- Entregables por red social -->
+      <div style="border:2px solid #0063DA; background:#f1f1f1; padding:24px; box-shadow:4px 4px 0 #0063DA; margin-bottom:40px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#0063DA; display:block; margin-bottom:16px;">// Entregables por Red Social Elegida:</span>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:12px; margin-bottom:16px;">
+          <div style="border:2px solid #0063DA; padding:12px; background:#ffffff; display:flex; align-items:center; gap:10px;"><span class="material-symbols-outlined" style="color:#0063DA;">public</span><span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px;">FB: 15 Diseños</span></div>
+          <div style="border:2px solid #0063DA; padding:12px; background:#ffffff; display:flex; align-items:center; gap:10px;"><span class="material-symbols-outlined" style="color:#0063DA;">photo_camera</span><span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px;">IG: 15 Diseños</span></div>
+          <div style="border:2px solid #0063DA; padding:12px; background:#ffffff; display:flex; align-items:center; gap:10px;"><span class="material-symbols-outlined" style="color:#0063DA;">videocam</span><span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px;">TikTok: 8 Videos</span></div>
+          <div style="border:2px solid #0063DA; padding:12px; background:#ffffff; display:flex; align-items:center; gap:10px;"><span class="material-symbols-outlined" style="color:#0063DA;">work</span><span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px;">LinkedIn: 15 Diseños</span></div>
+          <div style="border:2px solid #0063DA; padding:12px; background:#ffffff; display:flex; align-items:center; gap:10px;"><span class="material-symbols-outlined" style="color:#0063DA;">grid_view</span><span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:16px;">X / Pinterest: 15 Diseños</span></div>
+        </div>
+        <p style="font-family:'Barlow',sans-serif; font-size:13px; color:#555555; margin:0; line-height:1.5;"><strong>Nota:</strong> De los 15 diseños incluidos en cada red social, puede incluirse un máximo de 6 videos. Si adquieres la red social de TikTok podrás publicar esos 8 videos también en Facebook e Instagram (en caso de que administremos dichas redes).</p>
       </div>
+
+      <!-- 5 planes -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; background:#f1f1f1; margin-bottom:60px;">
+
+        <!-- Esencial -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; color:#0063DA;">1 Red Social</span>
+            <h3 style="font-size:24px; margin:8px 0 16px;">Plan Esencial</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>1 Red Social a elegir</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Parrilla de contenido & copies</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Atención a mensajes (9:00-17:00)</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>2 propuestas de campaña</li>
+            </ul>
+          </div>
+          <div>
+            <div style="border-top:2px solid #0063DA; padding-top:12px; margin-bottom:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">MENSUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:900; color:#0063DA;">$3,900 MXN</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">ANUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#111111;">$44,000 MXN</span></div>
+            </div>
+            <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 16px; font-size:11px;">CONTRATAR →</a>
+          </div>
+        </div>
+
+        <!-- Indispensable -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; color:#0063DA;">2 Redes Sociales</span>
+            <h3 style="font-size:24px; margin:8px 0 16px;">Plan Indispensable</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>2 Redes Sociales a elegir</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Cross-posting optimizado</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Atención a mensajes (9:00-17:00)</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Reporte mensual de crecimiento</li>
+            </ul>
+          </div>
+          <div>
+            <div style="border-top:2px solid #0063DA; padding-top:12px; margin-bottom:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">MENSUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:900; color:#0063DA;">$4,400 MXN</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">ANUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#111111;">$49,500 MXN</span></div>
+            </div>
+            <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 16px; font-size:11px;">CONTRATAR →</a>
+          </div>
+        </div>
+
+        <!-- Todo en Uno (RECOMENDADO) -->
+        <div class="brut-reveal" style="background:#0063DA; border:2px solid #0063DA; box-shadow:5px 5px 0 #111111; padding:24px; display:flex; flex-direction:column; justify-content:space-between; position:relative;">
+          <div style="position:absolute; top:0; left:0; right:0; background:#111111; padding:4px; text-align:center;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; text-transform:uppercase; color:#ffffff;">RECOMENDADO</span>
+          </div>
+          <div style="padding-top:20px;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; color:#f1f1f1;">3 Redes Sociales</span>
+            <h3 style="font-size:24px; margin:8px 0 16px; color:#f1f1f1;">Plan Todo en Uno</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>3 Redes Sociales a elegir</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Sincronización con TikTok</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Community + Trafficker dedicado</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#f1f1f1;"><span style="color:#f1f1f1; font-weight:bold;">✓</span>Estrategia de interacción rápida</li>
+            </ul>
+          </div>
+          <div>
+            <div style="border-top:2px solid #f1f1f1; padding-top:12px; margin-bottom:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#f1f1f1; font-weight:700;">MENSUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:900; color:#f1f1f1;">$4,900 MXN</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#f1f1f1; font-weight:700;">ANUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#ffffff;">$54,000 MXN</span></div>
+            </div>
+            <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 16px; font-size:11px; background:#f1f1f1; color:#0063DA; border-color:#f1f1f1; box-shadow:3px 3px 0 #111111;">CONTRATAR →</a>
+          </div>
+        </div>
+
+        <!-- Profesional -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; color:#0063DA;">4 Redes Sociales</span>
+            <h3 style="font-size:24px; margin:8px 0 16px;">Plan Profesional</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>4 Redes Sociales integradas</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Diseños y videos de alto nivel</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Optimización continua de pauta</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Reporte detallado de KPIs</li>
+            </ul>
+          </div>
+          <div>
+            <div style="border-top:2px solid #0063DA; padding-top:12px; margin-bottom:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">MENSUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:900; color:#0063DA;">$5,400 MXN</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">ANUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#111111;">$60,500 MXN</span></div>
+            </div>
+            <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 16px; font-size:11px;">CONTRATAR →</a>
+          </div>
+        </div>
+
+        <!-- Omnipresente -->
+        <div class="brut-reveal" style="background:#f1f1f1; border:2px solid #0063DA; box-shadow:4px 4px 0 #0063DA; padding:24px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; text-transform:uppercase; color:#0063DA;">6 Redes Sociales</span>
+            <h3 style="font-size:24px; margin:8px 0 16px;">Plan Omnipresente</h3>
+            <ul style="list-style:none; padding:0; margin:0 0 20px; display:flex; flex-direction:column; gap:8px;">
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>6 Redes Sociales (Cobertura total)</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Estrategia multicanal completa</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Soporte y atención prioritaria</li>
+              <li style="display:flex; gap:8px; font-family:'Barlow',sans-serif; font-size:14px; color:#555555;"><span style="color:#0063DA; font-weight:bold;">✓</span>Gestión publicitaria avanzada</li>
+            </ul>
+          </div>
+          <div>
+            <div style="border-top:2px solid #0063DA; padding-top:12px; margin-bottom:16px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">MENSUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:26px; font-weight:900; color:#0063DA;">$5,900 MXN</span></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-size:12px; color:#555555; font-weight:700;">ANUAL:</span><span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#111111;">$66,000 MXN</span></div>
+            </div>
+            <a href="/contacto" class="brut-btn" style="width:100%; padding:10px 16px; font-size:11px;">CONTRATAR →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Equipo incluido -->
+      <div style="border:2px solid #0063DA; background:#f1f1f1; padding:36px; box-shadow:5px 5px 0 #0063DA;">
+        <span class="brut-section-label" style="margin-bottom:12px;">// Equipo Incluido en todos los paquetes</span>
+        <h2 style="font-size:clamp(28px,3vw,40px); margin-bottom:28px;">Incluye: <span style="color:#0063DA;">Expertos en Campañas</span></h2>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px;">
+
+          <div style="border:2px solid #0063DA; padding:24px; background:#ffffff; box-shadow:3px 3px 0 #0063DA;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+              <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA;">person</span>
+              <h3 style="font-size:22px; margin:0;">Community Manager</h3>
+            </div>
+            <p style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; line-height:1.6; margin:0;">Ejecutivo que realizará la parrilla de contenidos con textos (copies) de cada una de las publicaciones, realiza los diseños, las publicaciones y responde a mensajes y comentarios en un horario de 9:00 am a 5:00 pm (GMT-6, Centro CDMX).</p>
+          </div>
+
+          <div style="border:2px solid #0063DA; padding:24px; background:#ffffff; box-shadow:3px 3px 0 #0063DA;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+              <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA;">campaign</span>
+              <h3 style="font-size:22px; margin:0;">Trafficker</h3>
+            </div>
+            <p style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; line-height:1.6; margin:0;">Ejecutivo experto en lanzamiento de pautas publicitarias, quien preparará las propuestas de campaña de inversión. Los paquetes incluyen dos propuestas de campaña. Recibe un reporte mensual de crecimiento. Si deseas campañas adicionales puedes contratarlas por un costo extra.</p>
+          </div>
+
+          <div style="border:2px solid #0063DA; padding:24px; background:#ffffff; box-shadow:3px 3px 0 #0063DA;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+              <span class="material-symbols-outlined" style="font-size:32px; color:#0063DA;">palette</span>
+              <h3 style="font-size:22px; margin:0;">Diseñador Gráfico</h3>
+            </div>
+            <p style="font-family:'Barlow',sans-serif; font-size:14px; color:#555555; line-height:1.6; margin:0;">Una persona que logrará proyectar la línea gráfica de tu negocio creando diseños y videos impactantes y programando y publicando todos tus diseños.</p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
