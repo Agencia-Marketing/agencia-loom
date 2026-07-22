@@ -2,12 +2,11 @@
 
 ## Project Overview
 
-Neo-brutalist landing page template for a digital marketing agency. Built with Astro + Tailwind CSS, deployable to Cloudflare Pages. Includes standalone HTML version for quick delivery. Visual counterpart to Plantilla 1 — same content, radically different aesthetic.
+Neo-brutalist landing page template for a digital marketing agency. Built with Astro + Tailwind CSS, deployable to Cloudflare Pages. Visual counterpart to Plantilla 1 — same content, radically different aesthetic.
 
 ## Critical Conventions
 
-- **Two variants coexist**: `src/` (Astro with local Tailwind + PostCSS) and `html/` (standalone HTML with Tailwind CDN + inline CSS). Keep both in sync when making visual/style changes.
-- **All brand colors**: defined as CSS custom properties in `:root` in `src/styles/global.css` and each HTML file's `<style>` block.
+- **All brand colors**: defined as CSS custom properties in `:root` in `src/styles/global.css`.
 - **Tailwind is v3**, not v4. Use `@tailwind base/components/utilities` directives.
 - **Zero border-radius everywhere** — this is a design constraint, not a bug.
 
@@ -49,8 +48,8 @@ Neo-brutalist landing page template for a digital marketing agency. Built with A
 
 ### Rebranding flow
 Change colors in TWO places:
-1. `:root` block in `src/styles/global.css` (and each HTML file's `<style>`)
-2. `theme.extend.colors` in `tailwind.config.mjs` (and inline config in HTMLs)
+1. `:root` block in `src/styles/global.css`
+2. `theme.extend.colors` in `tailwind.config.mjs`
 
 ## Key CSS Classes
 

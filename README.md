@@ -53,7 +53,7 @@ colors: {
 ```
 
 ### Tipografía
-En `src/layouts/Layout.astro` y `html/*.html`, reemplazar el link de Google Fonts y las familias en CSS.
+En `src/layouts/Layout.astro`, reemplazar el link de Google Fonts y las familias en CSS.
 
 ## Servicios (9 páginas)
 
@@ -68,10 +68,6 @@ En `src/layouts/Layout.astro` y `html/*.html`, reemplazar el link de Google Font
 | `/servicios/embudos-venta` | Embudos de Venta |
 | `/servicios/creadores-ugc` | Creadores UGC |
 | `/servicios/creacion-contenido` | Creación de Contenido |
-
-## Versión HTML standalone
-
-La carpeta `html/` contiene versiones HTML puras (Tailwind CDN + CSS inline) sin build. Abrir directamente en navegador o con Live Server.
 
 ## Deploy
 
