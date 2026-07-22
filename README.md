@@ -1,24 +1,23 @@
-# Plantilla 2 — Neo-Brutalist Agency
+# Loom — Agencia Digital
 
-Landing page neo-brutalista para agencia de marketing digital. Rediseño visual radical de Plantilla 1 — mismo contenido, estética industrial de alto contraste.
+Sitio web de Loom, agencia de consultoría en marketing y publicidad digital (México y Estados Unidos). Estética neo-brutalista clara: fondo blanco/gris, acento azul, tipografía masiva, sombras duras sin blur.
 
 ## Stack
 
-- **[Astro](https://astro.build)** v5 — Static site generator
+- **[Astro](https://astro.build)** v5 — output `server`
+- **[@astrojs/cloudflare](https://docs.astro.build/en/guides/integrations-guide/cloudflare/)** — adapter, deploy a Cloudflare Workers/Pages
 - **[Tailwind CSS](https://tailwindcss.com)** v3 — Utility-first CSS
 - **[PostCSS](https://postcss.org)** + Autoprefixer
-- **[Cloudflare Pages](https://pages.cloudflare.com)** — Hosting
-- **Barlow Condensed + JetBrains Mono** — Tipografías neo-brutalist
+- **Barlow Condensed + Barlow + JetBrains Mono** — Tipografías
 - **Material Symbols** — Iconografía
 
 ## Estética
 
-- Fondo negro profundo (`#0A0A0A`) con acento neon lime (`#AAFF00`)
+- Fondo claro (`#f1f1f1`) con acento azul Loom (`#0063DA`)
 - Zero `border-radius` en todo el sitio
-- Sombras duras con offset (sin blur): `4px 4px 0 #AAFF00`
-- Tipografía masiva Barlow Condensed (900 weight) + JetBrains Mono para labels
+- Sombras duras con offset (sin blur): `3px 3px 0 #0063DA`
+- Tipografía masiva Barlow Condensed (900 weight, uppercase) + JetBrains Mono para labels
 - Grid visible, bordes estructurales 2px
-- Acento secundario neon naranja-rojo (`#FF3C00`)
 
 ## Empezar
 
@@ -29,33 +28,30 @@ npm run build     # → dist/
 npm run preview
 ```
 
-## Personalizar
+## Estructura
 
-### Colores (cambiar en 2 lugares)
-
-**1. `src/styles/global.css` → bloque `:root`:**
-```css
-:root {
-  --color-accent:    #AAFF00;  /* Color principal neon */
-  --color-secondary: #FF3C00;  /* Acento secundario */
-  --color-bg:        #0A0A0A;  /* Fondo */
-  --color-text:      #F0F0F0;  /* Texto */
-}
+```
+src/
+  layouts/Layout.astro   # header, footer, fuentes — compartido por todas las páginas
+  styles/global.css      # design tokens (:root) y clases .brut-*
+  pages/
+    index.astro
+    nosotros.astro
+    contacto.astro
+    servicios/*.astro    # 9 páginas de servicio
+public/
+  img/                   # logo, imágenes de marca
 ```
 
-**2. `tailwind.config.mjs` → `theme.extend.colors`:**
-```js
-colors: {
-  accent: "#AAFF00",
-  secondary: "#FF3C00",
-  bg: "#0A0A0A",
-}
-```
+## Páginas
 
-### Tipografía
-En `src/layouts/Layout.astro`, reemplazar el link de Google Fonts y las familias en CSS.
+| Ruta | Contenido |
+|---|---|
+| `/` | Home — hero, grid de servicios, por qué elegirnos, CTA |
+| `/nosotros` | Historia, stats, equipo |
+| `/contacto` | Formulario, datos de contacto, redes sociales |
 
-## Servicios (9 páginas)
+### Servicios (9 páginas)
 
 | Ruta | Servicio |
 |---|---|
@@ -69,8 +65,28 @@ En `src/layouts/Layout.astro`, reemplazar el link de Google Fonts y las familias
 | `/servicios/creadores-ugc` | Creadores UGC |
 | `/servicios/creacion-contenido` | Creación de Contenido |
 
+## Personalizar
+
+### Colores
+
+Definidos como CSS custom properties en `src/styles/global.css` → bloque `:root`:
+
+```css
+:root {
+  --color-accent: #0063DA;  /* Azul Loom, color principal */
+  --color-bg:     #f1f1f1;  /* Fondo */
+  --color-text:   #111111;  /* Texto */
+}
+```
+
+`tailwind.config.mjs` → `theme.extend.colors` también define `accent`/`bg`/`text` para clases utilitarias de Tailwind; mantenerlo alineado con `global.css` al rebrandear.
+
+### Tipografía
+
+En `src/layouts/Layout.astro`, reemplazar el link de Google Fonts y las familias en `global.css`.
+
 ## Deploy
 
 ```bash
-git push  # → Cloudflare Pages build automático
+git push  # → Cloudflare Workers build automático
 ```
