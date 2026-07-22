@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 /* ============================================================
-   PLANTILLA 2 — NEO-BRUTALIST DESIGN SYSTEM
+   LOOM AGENCY — LIGHT NEO-BRUTALIST DESIGN SYSTEM
    ============================================================ */
 
 :root {
-  /* Brand colors — change these per client */
-  --color-bg:              #0A0A0A;
-  --color-surface:         #111111;
-  --color-surface-raised:  #191919;
-  --color-border:          #2A2A2A;
-  --color-border-strong:   #3D3D3D;
+  /* Brand colors */
+  --color-bg:              #f1f1f1;
+  --color-surface:         #f1f1f1;
+  --color-surface-raised:  #ffffff;
+  --color-border:          #e0e0e0;
+  --color-border-strong:   #0063DA;
 
-  --color-accent:          #AAFF00;
-  --color-accent-rgb:      170, 255, 0;
-  --color-accent-dark:     #88CC00;
-  --color-accent-dim:      #1A2600;
-  --color-accent-on:       #0A0A0A;
+  --color-accent:          #0063DA;
+  --color-accent-rgb:      0, 99, 218;
+  --color-accent-dark:     #004eb1;
+  --color-accent-dim:      #e6f0ff;
+  --color-accent-on:       #f1f1f1;
 
-  --color-secondary:       #FF3C00;
-  --color-secondary-rgb:   255, 60, 0;
-  --color-secondary-dim:   #1F0900;
+  --color-secondary:       #0063DA;
+  --color-secondary-rgb:   0, 99, 218;
+  --color-secondary-dim:   #e6f0ff;
 
-  --color-text:            #F0F0F0;
-  --color-text-muted:      #888888;
-  --color-text-dim:        #555555;
+  --color-text:            #111111;
+  --color-text-muted:      #555555;
+  --color-text-dim:        #777777;
 
-  --color-footer-bg:       #0A0A0A;
-  --color-footer-border:   #AAFF00;
+  --color-footer-bg:       #f1f1f1;
+  --color-footer-border:   #0063DA;
 }
 
 /* ---- Base ---- */
@@ -71,11 +71,11 @@
 
   input, textarea, select {
     border-radius: 0 !important;
-    background: var(--color-bg);
-    border: 2px solid var(--color-border-strong);
+    background: #ffffff;
+    border: 2px solid var(--color-accent);
     color: var(--color-text);
     font-family: 'Barlow', sans-serif;
-    transition: border-color 150ms ease-out;
+    transition: border-color 150ms ease-out, box-shadow 150ms ease-out;
     outline: none;
   }
 
@@ -83,6 +83,7 @@
   textarea:focus,
   select:focus {
     border-color: var(--color-accent);
+    box-shadow: 3px 3px 0 var(--color-accent);
   }
 
   ::selection {
@@ -91,7 +92,7 @@
   }
 
   ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: var(--color-surface); }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
   ::-webkit-scrollbar-thumb { background: var(--color-accent); border-radius: 0; }
   ::-webkit-scrollbar-thumb:hover { background: var(--color-accent-dark); }
 }
@@ -123,7 +124,7 @@
   .brut-btn:hover {
     background: var(--color-accent);
     color: var(--color-accent-on);
-    box-shadow: 5px 5px 0 var(--color-accent-dark);
+    box-shadow: 5px 5px 0 var(--color-text);
     transform: translate(-1px, -1px);
   }
 
@@ -132,30 +133,31 @@
     box-shadow: 0 0 0 var(--color-accent);
   }
 
-  /* Dark-on-accent button (used on accent backgrounds) */
+  /* Dark-on-accent button */
   .brut-btn-dark {
-    border-color: var(--color-accent-on);
-    color: var(--color-accent-on);
-    box-shadow: 3px 3px 0 var(--color-accent-on);
+    border-color: var(--color-text);
+    color: var(--color-text);
+    box-shadow: 3px 3px 0 var(--color-text);
   }
 
   .brut-btn-dark:hover {
-    background: var(--color-accent-on);
-    color: var(--color-accent);
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.5);
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    border-color: var(--color-accent);
+    box-shadow: 5px 5px 0 var(--color-text);
   }
 
-  /* Secondary (orange) button */
+  /* Secondary button */
   .brut-btn-secondary {
-    border-color: var(--color-secondary);
-    color: var(--color-secondary);
-    box-shadow: 3px 3px 0 var(--color-secondary);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    box-shadow: 3px 3px 0 var(--color-accent);
   }
 
   .brut-btn-secondary:hover {
-    background: var(--color-secondary);
+    background: var(--color-accent);
     color: var(--color-accent-on);
-    box-shadow: 5px 5px 0 #CC3000;
+    box-shadow: 5px 5px 0 var(--color-text);
     transform: translate(-1px, -1px);
   }
 
@@ -163,28 +165,27 @@
   .brut-btn-filled {
     background: var(--color-accent);
     color: var(--color-accent-on);
-    border-color: var(--color-accent-dark);
-    box-shadow: 3px 3px 0 var(--color-accent-dark);
+    border-color: var(--color-accent);
+    box-shadow: 3px 3px 0 var(--color-text);
   }
 
   .brut-btn-filled:hover {
     background: var(--color-accent-dark);
-    box-shadow: 5px 5px 0 #667700;
+    box-shadow: 5px 5px 0 var(--color-text);
     transform: translate(-1px, -1px);
   }
 
   /* Card */
   .brut-card {
-    border: 2px solid var(--color-border-strong);
+    border: 2px solid var(--color-accent);
     background: var(--color-surface);
-    box-shadow: 4px 4px 0 var(--color-border-strong);
+    box-shadow: 4px 4px 0 var(--color-accent);
     transition: transform 150ms ease-out, box-shadow 150ms ease-out, border-color 150ms ease-out;
   }
 
   .brut-card:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 var(--color-accent);
-    border-color: var(--color-accent);
+    box-shadow: 6px 6px 0 var(--color-text);
   }
 
   /* Tag/badge */
@@ -202,12 +203,12 @@
   }
 
   .brut-tag-secondary {
-    background: var(--color-secondary);
-    color: #fff;
+    background: var(--color-accent);
+    color: var(--color-accent-on);
   }
 
   .brut-tag-muted {
-    background: var(--color-border-strong);
+    background: var(--color-border);
     color: var(--color-text-muted);
   }
 
@@ -234,16 +235,6 @@
     transform: translateY(0);
   }
 
-  .brut-reveal-delay-1 { transition-delay: 80ms; }
-  .brut-reveal-delay-2 { transition-delay: 160ms; }
-  .brut-reveal-delay-3 { transition-delay: 240ms; }
-  .brut-reveal-delay-4 { transition-delay: 320ms; }
-  .brut-reveal-delay-5 { transition-delay: 400ms; }
-  .brut-reveal-delay-6 { transition-delay: 480ms; }
-  .brut-reveal-delay-7 { transition-delay: 560ms; }
-  .brut-reveal-delay-8 { transition-delay: 640ms; }
-  .brut-reveal-delay-9 { transition-delay: 720ms; }
-
   /* Grid line background pattern */
   .brut-grid-bg {
     background-color: var(--color-bg);
@@ -261,7 +252,7 @@
   /* Divider */
   .brut-divider {
     border: 0;
-    border-top: 2px solid var(--color-border-strong);
+    border-top: 2px solid var(--color-accent);
     margin: 0;
   }
 
@@ -279,8 +270,8 @@
   .brut-plan-featured {
     background: var(--color-accent);
     color: var(--color-accent-on);
-    border: 2px solid var(--color-accent-dark);
-    box-shadow: 6px 6px 0 var(--color-accent-dark);
+    border: 2px solid var(--color-accent);
+    box-shadow: 6px 6px 0 var(--color-text);
   }
 
   .brut-plan-featured h3,
@@ -335,11 +326,10 @@ footer p, footer li, footer a, footer span {
 }
 
 footer a:hover { color: var(--color-accent) !important; }
-
 footer .brut-section-label { color: var(--color-accent) !important; }
 
 /* ---- Sections ---- */
-section { border-bottom: 2px solid var(--color-border); }
+section { border-bottom: 2px solid var(--color-accent); }
 
 /* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
